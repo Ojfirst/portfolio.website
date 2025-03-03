@@ -1,0 +1,211 @@
+
+// container
+.container {
+    max-width: $wesite-width;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+%btn-shared {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    border-radius: 10rem
+}
+
+.btn {
+    &-main {
+        @extend %btn-shared;
+        color: $dark-color;
+        background: $goldenrod;
+    }
+
+    &-special {
+        @extend %btn-shared;
+        color: $white;
+        background: $special-color;
+    }
+    
+    &-dark {
+        @extend %btn-shared;
+        color: $white;
+        background: $main-color;
+    }
+}
+
+// General effect on buttons on hover
+a[class^='btn-']:hover,
+button[class^='btn-']:hover,
+input[class^='btn-']:hover {
+    opacity: 0.7;
+}
+
+// General effect on buttons on active
+button[class^='btn-']:active,
+a[class^='btn-']:active,
+input[class^='btn-']:active {
+    background-color: $goldenrod;
+    color: $dark-color;
+    opacity: 0.7;
+}
+
+// leade style
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+text.shadow {
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+.sec-margin {
+    margin: 2.5rem;
+}
+
+.section-title {
+    font-size: 1.7rem;
+    color: $dark-color;
+    margin: 1rem 0;
+}
+
+.content-container {
+    padding: 1rem;
+    color: $light-color;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+}
+
+// Animation 
+.box {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 0.6s ease-in-out 0.6s;
+}
+
+.box.bottom {
+    transform: translateY(100px);
+}
+
+.box.right {
+    transform: translateX(100px);
+}
+
+.box.left {
+    transform: translateX(-100px);
+}
+
+.box.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+// Padding
+.py {
+    &-1 {
+        padding: 1rem 0;
+    }
+    &-2 {
+        padding: 2rem 0;
+    }
+    &-3 {
+        padding: 3rem 0;
+    }
+    &-4 {
+        padding: 4rem 0;
+    }
+}
+
+// Margin
+.my {
+    &-1 {
+        margin: 1rem 0;
+    }
+    &-2 {
+        margin: 2rem 0;
+    }
+    &-3 {
+        margin: 3rem 0;
+    }
+    &-4 {
+        margin: 4rem 0;
+    }
+}
+
+.bounce {
+    display: inline-block;
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+.bounce-2 {
+    display: inline-block;
+    animation: bounce-2 2s infinite ease-in-out;
+}
+@keyframes bounce-2 {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(20px, -20px);
+    }
+
+    50% {
+        transform: translateY(-20px, 20px);
+    }
+    75% {
+        transform: translateY(10px, -10px);
+    }
+}
+
+.bounce-hover:hover {
+    animation: hoverBounce 0.5s ease-in-out;
+}
+
+@keyframes hoverBounce {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-15px);}
+}
+
+#section-section {
+    background: $light-color;
+    color: $black;
+    margin: 0;
+
+    & .content {
+        color: $black;
+    }
+}
+
+h1 span {
+    font-size: 2rem;
+    color: $white;
+}
+
+
+
+
+
+
+
