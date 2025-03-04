@@ -1014,11 +1014,13 @@ which is now invincible */
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-size: 0.6rem;
   z-index: 20;
 }
 .scroll-buttons .scroll-btn {
   display: flex;
   align-items: center;
+  padding: 0.5rem 1rem;
   gap: 5px;
   outline: none;
   transition: all 0.3s ease-in-out;
@@ -1357,6 +1359,10 @@ which is now invincible */
   }
   #nav_bar ul {
     display: none;
+  }
+  .scroll-buttons {
+    bottom: 150px;
+    right: 20px;
   }
   #header-home {
     height: 70vh;

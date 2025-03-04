@@ -970,20 +970,24 @@ border-color: $goldenrod;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-size: 0.6rem;
     z-index: 20;
 
     // Button style
     & .scroll-btn {
         display: flex;
         align-items: center;
+        padding: 0.5rem 1rem;
         gap: 5px;
         outline: none;
         transition: all 0.3s ease-in-out;
+
 
         &:hover {
             background: #ff2d55;
             color: $white;
         }
+
     }
     
     // Hide Back to top Button initially
