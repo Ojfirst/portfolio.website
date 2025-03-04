@@ -1419,25 +1419,19 @@ which is now invincible */
     width: 100%;
     padding: 0.5rem 0;
   }
-  git confit #header-inner {
+  #header-inner {
     height: 50vh;
   }
   #header-inner .Hero-msg-container {
     margin-top: 5.5rem;
-  git confit #header-inner .Hero-msg-container {
-    margin-top: 5.5rem;
   }
   #header-inner .Hero-msg-container h1 {
-    font-size: 29px;
-  git confit #header-inner .Hero-msg-container h1 {
     font-size: 29px;
     line-height: 1;
     margin-top: rem;
     min-height: 70px;
   }
   #header-inner .Hero-msg-container h1 span {
-    font-size: 1.1rem;
-  git confit #header-inner .Hero-msg-container h1 span {
     font-size: 1.1rem;
   }
   #header-inner .Hero-msg-container p {
@@ -1446,9 +1440,6 @@ which is now invincible */
   }
   #header-inner .Hero-msg-container .btn-main {
     padding: 0.5rem 1rem;
-  git confit #header-inner .Hero-msg-container p {
-    font-size: 15px;
-    min-height: 80px;
   }
   #about .container.about-1 {
     grid-template-columns: 1fr;
