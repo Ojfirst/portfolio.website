@@ -624,7 +624,7 @@ which is now invincible */
   align-items: center;
   border: 1px solid rgb(73, 52, 0);
   border-radius: 0.3rem;
-  Background: #333;
+  background: #333;
   padding: 0.5rem 0.5rem;
   cursor: pointer;
 }
@@ -1014,11 +1014,13 @@ which is now invincible */
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-size: 0.6rem;
   z-index: 20;
 }
 .scroll-buttons .scroll-btn {
   display: flex;
   align-items: center;
+  padding: 0.5rem 1rem;
   gap: 5px;
   outline: none;
   transition: all 0.3s ease-in-out;
@@ -1358,27 +1360,34 @@ which is now invincible */
   #nav_bar ul {
     display: none;
   }
+  .scroll-buttons {
+    bottom: 150px;
+    right: 20px;
+  }
   #header-home {
     height: 70vh;
   }
   #header-home .Hero-msg-container {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
   #header-home .Hero-msg-container h1 {
-    font-size: 30px;
+    font-size: 29px;
     display: block;
     min-height: 150px;
   }
   #header-home .Hero-msg-container h1 span {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   #header-home .Hero-msg-container p {
     display: block;
-    font-size: 16px;
-    min-height: 60px;
+    font-size: 15px;
+    min-height: 95px;
   }
   #header-home .expertise {
     display: none;
+  }
+  #home-b .container {
+    padding-left: 1rem;
   }
   #home-b .grid-items {
     grid-template-columns: repeat(2, 1fr);
@@ -1413,21 +1422,33 @@ which is now invincible */
   git confit #header-inner {
     height: 50vh;
   }
+  #header-inner .Hero-msg-container {
+    margin-top: 5.5rem;
   git confit #header-inner .Hero-msg-container {
-    margin-top: 10rem;
+    margin-top: 5.5rem;
   }
+  #header-inner .Hero-msg-container h1 {
+    font-size: 29px;
   git confit #header-inner .Hero-msg-container h1 {
-    font-size: 30px;
+    font-size: 29px;
     line-height: 1;
     margin-top: rem;
     min-height: 70px;
   }
+  #header-inner .Hero-msg-container h1 span {
+    font-size: 1.1rem;
   git confit #header-inner .Hero-msg-container h1 span {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
+  #header-inner .Hero-msg-container p {
+    font-size: 15px;
+    min-height: 80px;
+  }
+  #header-inner .Hero-msg-container .btn-main {
+    padding: 0.5rem 1rem;
   git confit #header-inner .Hero-msg-container p {
-    font-size: 18px;
-    min-height: 100px;
+    font-size: 15px;
+    min-height: 80px;
   }
   #about .container.about-1 {
     grid-template-columns: 1fr;

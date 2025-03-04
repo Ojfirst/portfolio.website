@@ -27,28 +27,34 @@
         }
     }
 
+    // Scroll-bar 
+    .scroll-buttons {
+        bottom: 150px;
+        right: 20px;
+    }
+
     // Hero section 
     
     #header-home {
         height: 70vh;
 
         .Hero-msg-container {
-            margin-top: 4rem;
+            margin-top: 3rem;
 
             h1 {
-                font-size: 30px;
+                font-size: 29px;
                 display: block;
                 min-height: 150px;
                 
                 span {
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                 }
             }
 
             p {
                 display: block;
-                font-size: 16px;
-                min-height: 60px;
+                font-size: 15px;
+                min-height: 95px;
             }
         }
         
@@ -59,6 +65,11 @@
 
 
     #home-b {
+
+        .container {
+            padding-left: 1rem;
+        }
+
         .grid-items {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -90,10 +101,6 @@
         
     }
 
-    #home-c {
-       
-    }
-
     #home-e {
         .contact-info {
             padding: 0.5rem 0;
@@ -112,28 +119,32 @@
             }
         } 
     }
-git confit
+
 
     // About Section 
     #header-inner {
         height: 50vh;
 
         .Hero-msg-container {
-            margin-top: 10rem;
+            margin-top: 5.5rem;
             h1 {
-                font-size: 30px;
+                font-size: 29px;
                 line-height: 1;
                 margin-top: rem;
                 min-height: 70px;
 
                 span {
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                 }
             }
 
             p {
-                font-size: 18px;
-                min-height: 100px;
+                font-size: 15px;
+                min-height: 80px;
+            }
+
+            .btn-main {
+                padding: 0.5rem 1rem;
             }
         }
 
