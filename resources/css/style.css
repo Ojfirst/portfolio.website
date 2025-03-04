@@ -1428,7 +1428,7 @@ which is now invincible */
   #header-inner .Hero-msg-container h1 {
     font-size: 29px;
     line-height: 1;
-    margin-top: rem;
+    margin-top: 1rem;
     min-height: 70px;
   }
   #header-inner .Hero-msg-container h1 span {
