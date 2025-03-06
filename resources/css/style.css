@@ -1374,15 +1374,15 @@ which is now invincible */
     right: 20px;
   }
   #header-home {
-    height: 80vh;
+    height: 75vh;
   }
   #header-home .Hero-msg-container {
     margin-top: 3rem;
   }
   #header-home .Hero-msg-container h1 {
-    font-size: 29px;
+    font-size: 30px;
     display: block;
-    min-height: 170px;
+    min-height: 180px;
   }
   #header-home .Hero-msg-container h1 span {
     font-size: 1.1rem;
