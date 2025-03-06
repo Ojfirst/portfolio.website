@@ -74,6 +74,8 @@ text.shadow {
 .grid-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
 }
 
 .box {
@@ -1003,6 +1005,13 @@ which is now invincible */
   justify-content: center;
   align-items: center;
 }
+#foot-main > div p:nth-last-of-type(2) {
+  text-align: center;
+}
+#foot-main > div p:last-of-type {
+  text-align: center;
+  font-weight: bolder;
+}
 #foot-main .socials > a {
   padding: 0 0.5rem;
 }
@@ -1365,7 +1374,7 @@ which is now invincible */
     right: 20px;
   }
   #header-home {
-    height: 70vh;
+    height: 80vh;
   }
   #header-home .Hero-msg-container {
     margin-top: 3rem;
@@ -1373,7 +1382,7 @@ which is now invincible */
   #header-home .Hero-msg-container h1 {
     font-size: 29px;
     display: block;
-    min-height: 150px;
+    min-height: 170px;
   }
   #header-home .Hero-msg-container h1 span {
     font-size: 1.1rem;
