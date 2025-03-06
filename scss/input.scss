@@ -954,6 +954,16 @@ border-color: $goldenrod;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+
+        & p:nth-last-of-type(2) {
+            text-align: center;
+        }
+
+        & p:last-of-type {
+            text-align: center;
+            font-weight: bolder;
+        }
+       
     }
 
     .socials > a {
