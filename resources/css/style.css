@@ -1370,27 +1370,27 @@ which is now invincible */
     display: none;
   }
   .scroll-buttons {
-    bottom: 150px;
+    bottom: 20px;
     right: 20px;
   }
   #header-home {
-    height: 75vh;
+    height: 100vh;
   }
   #header-home .Hero-msg-container {
-    margin-top: 3rem;
+    margin-top: 6.5rem;
   }
   #header-home .Hero-msg-container h1 {
-    font-size: 30px;
+    font-size: 32px;
     display: block;
-    min-height: 180px;
+    min-height: 190px;
   }
   #header-home .Hero-msg-container h1 span {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   #header-home .Hero-msg-container p {
     display: block;
-    font-size: 15px;
-    min-height: 95px;
+    font-size: 17px;
+    min-height: 100px;
   }
   #header-home .expertise {
     display: none;

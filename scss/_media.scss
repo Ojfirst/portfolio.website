@@ -29,32 +29,32 @@
 
     // Scroll-bar 
     .scroll-buttons {
-        bottom: 150px;
+        bottom: 20px;
         right: 20px;
     }
 
     // Hero section 
     
     #header-home {
-        height: 75vh;
+        height: 100vh;
 
         .Hero-msg-container {
-            margin-top: 3rem;
+            margin-top: 6.5rem;
 
             h1 {
-                font-size: 30px;
+                font-size: 32px;
                 display: block;
-                min-height: 180px;
+                min-height: 190px;
                 
                 span {
-                    font-size: 1.1rem;
+                    font-size: 1.3rem;
                 }
             }
 
             p {
                 display: block;
-                font-size: 15px;
-                min-height: 95px;
+                font-size: 17px;
+                min-height: 100px;
             }
         }
         
