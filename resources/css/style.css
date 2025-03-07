@@ -789,8 +789,8 @@ which is now invincible */
 }
 #home-d .image {
   position: absolute;
-  width: 150px;
-  height: 200px;
+  max-width: 150px;
+  max-height: 200px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) rotateY(calc(var(--i) * 72deg)) translateZ(300px);
@@ -1280,6 +1280,7 @@ which is now invincible */
 
 #service-offered {
   background-color: #fff;
+  transition: all 0.6s ease-in-out;
 }
 #service-offered .grid-content {
   gap: 20px;
@@ -1358,16 +1359,20 @@ which is now invincible */
   #nav_bar ul {
     display: none;
   }
+  .scroll-buttons {
+    bottom: 150px;
+    right: 20px;
+  }
   #header-home {
-    height: 70vh;
+    height: 80vh;
   }
   #header-home .Hero-msg-container {
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
   #header-home .Hero-msg-container h1 {
     font-size: 30px;
     display: block;
-    min-height: 150px;
+    min-height: 180px;
   }
   #header-home .Hero-msg-container h1 span {
     font-size: 1.2rem;
@@ -1375,7 +1380,7 @@ which is now invincible */
   #header-home .Hero-msg-container p {
     display: block;
     font-size: 16px;
-    min-height: 60px;
+    min-height: 100px;
   }
   #header-home .expertise {
     display: none;
@@ -1400,6 +1405,146 @@ which is now invincible */
     gap: 1rem;
     background-color: #333;
   }
+  #home-d {
+    display: none;
+  }
+  #project_showcase_mobile {
+    background-color: #000;
+    transition: all 0.6s ease-in-out;
+    /* Animated Gradient Background */
+    /* Spotlight Effect */
+    /* Floating Particles */
+  }
+  #project_showcase_mobile .content-container {
+    display: grid;
+    grid-template-columns: repeat(20px, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(0, 10, 36, 0.5), rgba(9, 121, 112, 0.5)), url(../images/bg-img.jpg) no-repeat center center/cover;
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  #project_showcase_mobile .section-title {
+    color: #ccc;
+  }
+  #project_showcase_mobile .gallery-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  #project_showcase_mobile .gallery-container::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  #project_showcase_mobile .particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #project_showcase_mobile .particles span {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: floatParticles 5s linear infinite;
+  }
+  @keyframes floatParticles {
+    from {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100vh);
+      opacity: 0;
+    }
+  }
+  #project_showcase_mobile .carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+  }
+  #project_showcase_mobile .project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  #project_showcase_mobile .project {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  #project_showcase_mobile .project h3 {
+    color: #000;
+  }
+  #project_showcase_mobile .project:hover {
+    transform: scale(1.05);
+  }
+  #project_showcase_mobile .project img {
+    max-width: 70px;
+    max-height: 80px;
+    border-radius: 8px;
+  }
+  #project_showcase_mobile .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #project_showcase_mobile .modal-content {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 15% auto;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+  }
+  #project_showcase_mobile .modal img {
+    width: 80%;
+    border-radius: 8px;
+  }
+  #project_showcase_mobile .close {
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
   #home-e .contact-info {
     padding: 0.5rem 0;
   }
@@ -1414,7 +1559,7 @@ which is now invincible */
     height: 50vh;
   }
   #header-inner .Hero-msg-container {
-    margin-top: 10rem;
+    margin-top: 3rem;
   }
   #header-inner .Hero-msg-container h1 {
     font-size: 30px;
@@ -1446,6 +1591,9 @@ which is now invincible */
     grid-template-columns: 1fr;
     padding: 0.5rem;
     gap: 1rem;
+  }
+  #service-offered .grid-content {
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 800px) {
@@ -1496,6 +1644,9 @@ which is now invincible */
   }
   #home-b .items p {
     font-size: 0.5rem;
+  }
+  #project_showcase_mobile {
+    display: none;
   }
   #header-inner .Hero-msg-container {
     margin-top: 15rem;
@@ -1549,6 +1700,9 @@ which is now invincible */
   #home-d .content-container {
     height: 40vh;
   }
+  #project_showcase_mobile {
+    display: none;
+  }
   #header-inner {
     height: 50vh;
   }
@@ -1559,6 +1713,11 @@ which is now invincible */
     line-height: 1;
     margin-top: rem;
     min-height: 100px;
+  }
+}
+@media screen and (min-width: 1101px) {
+  #project_showcase_mobile {
+    display: none;
   }
 }
 @media (max-height: 500px) {
@@ -1629,6 +1788,9 @@ which is now invincible */
     left: 50%;
     top: 40%;
   }
+  #project_showcase_mobile {
+    display: none;
+  }
   #home-e .contact-info {
     padding: 0.5rem 0;
   }
@@ -1667,6 +1829,102 @@ which is now invincible */
     padding: 0 1rem;
     text-align: justify;
     padding-bottom: 1rem;
+  }
+  #service-intro .container.service {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+}
+@media (max-height: 800px) {
+  #header-home {
+    height: 70vh;
+  }
+  #header-home .Hero-msg-container {
+    margin-top: 2rem;
+  }
+  #header-home .Hero-msg-container h1 {
+    font-size: 40px;
+    display: block;
+    min-height: 140px;
+  }
+  #header-home .Hero-msg-container h1 span {
+    font-size: 1.6rem;
+  }
+  #header-home .Hero-msg-container p {
+    display: block;
+    font-size: 16px;
+    min-height: 60px;
+  }
+  #header-home .expertise {
+    display: none;
+  }
+  #home-b .grid-items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #home-b .items:nth-child(5) {
+    grid-column: 2/span 2;
+    grid-row: 1/span 0;
+    margin-left: 0rem;
+    margin-top: 0rem;
+  }
+  #home-b .items h1 {
+    font-size: 2rem;
+  }
+  #home-b .items p {
+    font-size: 0.5rem;
+  }
+  #home-c .flex-items {
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #333;
+  }
+  #home-d .content-container {
+    height: 80vh;
+  }
+  #home-d .content-container .image {
+    width: 115px;
+    height: 140px;
+    left: 50%;
+    top: 40%;
+  }
+  #project_showcase_mobile {
+    display: none;
+  }
+  #home-e .contact-info {
+    padding: 0.5rem 0;
+  }
+  #home-e form .form-top {
+    display: flex;
+  }
+  #home-e form .form-top > div {
+    width: 50%;
+    padding: 0.5rem 0;
+  }
+  #header-inner {
+    height: 70vh;
+  }
+  #header-inner .Hero-msg-container {
+    margin-top: 12rem;
+    padding-left: 1rem;
+  }
+  #header-inner .Hero-msg-container h1 {
+    font-size: 40px;
+    line-height: 1;
+    margin-top: rem;
+    min-height: 50px;
+  }
+  #header-inner .Hero-msg-container h1 span {
+    font-size: 1.6rem;
+  }
+  #header-inner .Hero-msg-container p {
+    font-size: 18px;
+    min-height: 30px;
+  }
+  #about .container.about-1 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5rem;
+    gap: 1rem;
   }
   #service-intro .container.service {
     grid-template-columns: 1fr;

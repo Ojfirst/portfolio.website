@@ -27,18 +27,23 @@
         }
     }
 
+    .scroll-buttons {
+        bottom: 150px;
+        right: 20px;
+    }
+
     // Hero section 
     
     #header-home {
-        height: 70vh;
+        height: 80vh;
 
         .Hero-msg-container {
-            margin-top: 4rem;
+            margin-top: 5rem;
 
             h1 {
                 font-size: 30px;
                 display: block;
-                min-height: 150px;
+                min-height: 180px;
                 
                 span {
                     font-size: 1.2rem;
@@ -48,7 +53,7 @@
             p {
                 display: block;
                 font-size: 16px;
-                min-height: 60px;
+                min-height: 100px;
             }
         }
         
@@ -90,8 +95,160 @@
         
     }
 
-    #home-c {
-       
+    #home-d {
+        display: none;
+    }
+
+    #project_showcase_mobile {
+        background-color: $black;
+        transition: all 0.6s ease-in-out;
+
+
+        .content-container {
+            display: grid;
+            grid-template-columns: repeat(20px, 1fr);
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background: linear-gradient(135deg, rgba(0, 10, 36, 0.5), rgba(9, 121, 112, 0.5)), 
+            url(../images/bg-img.jpg) no-repeat center center/cover;
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Animated Gradient Background */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .section-title{
+            color: $medium-light-color;
+        }
+
+        .gallery-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+        
+        /* Spotlight Effect */
+        .gallery-container::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        /* Floating Particles */
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .particles span {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: floatParticles 5s linear infinite;
+        }
+
+        @keyframes floatParticles {
+            from {
+                transform: translateY(0px); 
+                opacity: 1; 
+            }
+            to {
+                transform: translateY(-100vh); 
+                opacity: 0; 
+            }
+        }
+
+        .carousel {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: transform 1s ease-in-out;
+        }
+
+        .project-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .project {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+
+            h3 {
+                color:$black;
+            }
+        }
+        
+        .project:hover {
+            transform: scale(1.05);
+        }
+        
+        .project img {
+            max-width: 70px;
+            max-height: 80px;
+            border-radius: 8px;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .modal-content {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            margin: 15% auto;
+            width: 50%;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .modal img {
+            width: 80%;
+            border-radius: 8px;
+        }
+        
+        .close {
+            float: right;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
     }
 
     #home-e {
@@ -112,14 +269,14 @@
             }
         } 
     }
-git confit
+
 
     // About Section 
     #header-inner {
         height: 50vh;
 
         .Hero-msg-container {
-            margin-top: 10rem;
+            margin-top: 3rem;
             h1 {
                 font-size: 30px;
                 line-height: 1;
@@ -164,6 +321,12 @@ git confit
         padding: 0.5rem;
         gap: 1rem;
           
+        }
+    }
+
+    #service-offered {
+        .grid-content {
+            grid-template-columns: 1fr;
         }
     }
 }
@@ -238,6 +401,11 @@ git confit
             font-size: 0.5rem;
         }
     }
+
+    #project_showcase_mobile {
+        display: none;
+    }
+
 
     // About Section 
     #header-inner {
@@ -315,6 +483,10 @@ git confit
         }
     }
 
+    #project_showcase_mobile {
+        display: none;
+    }
+
      // About Section 
      #header-inner {
         height: 50vh;
@@ -327,6 +499,12 @@ git confit
             }
         }
 
+    }
+}
+
+@media screen and (min-width: 1101px) {
+    #project_showcase_mobile {
+        display: none;
     }
 }
 
@@ -437,6 +615,10 @@ git confit
 
     }
 
+    #project_showcase_mobile {
+        display: none;
+    }
+
     #home-e {
         .contact-info {
             padding: 0.5rem 0;
@@ -492,6 +674,155 @@ git confit
             padding: 0 1rem;
             text-align: justify;
             padding-bottom: 1rem;
+        }
+    }
+
+
+    // Services
+    #service-intro {
+        .container.service {
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+        gap: 1rem;
+        
+        }
+    }
+}
+
+// Landscape 
+@media(max-height: 800px) {
+
+    // Hero section 
+    
+    #header-home {
+        height: 70vh;
+
+        .Hero-msg-container {
+            margin-top: 2rem;
+
+            h1 {
+                font-size: 40px;
+                display: block;
+                min-height: 140px;
+                
+                span {
+                    font-size: 1.6rem;
+                }
+            }
+
+            p {
+                display: block;
+                font-size: 16px;
+                min-height: 60px;
+            }
+        }
+        
+        .expertise {
+            display: none;
+        }
+    }
+
+
+    #home-b {
+        .grid-items {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .items:nth-child(5) {
+            grid-column: 2 / span 2;
+            grid-row: 1 / span 0;
+            margin-left: 0rem;
+            margin-top: 0rem;
+        }
+
+        .items h1 {
+            font-size: 2rem;
+        }
+        .items p {
+            font-size: 0.5rem;
+        }
+    }
+
+    #home-c {
+    
+    
+            .flex-items {
+                flex-wrap: wrap;
+                gap: 1rem;
+                background-color: $dark-color;
+    
+            }
+        
+    }
+
+    #home-d {
+
+        .content-container {
+            height: 80vh;
+            .image {
+                width: 115px;
+                height: 140px;
+                left: 50%;
+                top: 40%;
+            }
+        }
+
+    }
+
+    #project_showcase_mobile {
+        display: none;
+    }
+
+    #home-e {
+        .contact-info {
+            padding: 0.5rem 0;
+        }
+
+        form {
+
+            .form-top {
+                display: flex;
+    
+                & > div {
+                    width: 50%;
+                    padding: 0.5rem 0; 
+                }
+
+            }
+        } 
+    }
+
+
+    // About Section 
+    #header-inner {
+        height: 70vh;
+        .Hero-msg-container {
+            margin-top: 12rem;
+            padding-left: 1rem;
+            h1 {
+                font-size: 40px;
+                line-height: 1;
+                margin-top: rem;
+                min-height: 50px;
+
+                span {
+                    font-size: 1.6rem;
+                }
+            }
+
+            p {
+                font-size: 18px;
+                min-height: 30px;
+            }
+        }
+
+    }
+
+    #about {
+        .container.about-1 { 
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0.5rem;
+            gap: 1rem;
         }
     }
 

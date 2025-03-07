@@ -25,6 +25,7 @@
     <script src="resources/js/gallery.js" defer></script>
     <script src="resources/js/clientsreview.js" defer></script>
     <script src="resources/js/formvalidation.js" defer></script>
+    <script src="resources/project_showcase_mobile.js" defer></script>
     <title>OMOJIDE FEMI | Full-Stack Web-Developer, Softwear Artisan</title>
 </head>
 
@@ -196,6 +197,42 @@
             </div>
         </section>
 
+        <section id="project_showcase_mobile" class="text-center sec-margin py-2">
+            <div class="container">
+                <div class="content-container">
+                    <h1 class="section-title text-center box top bounce">My Soul-Driven Projects</h1>
+                    <div class="project-grid">
+                        <div class="project"
+                            onclick="openModal('Project 1', 'This is a description of Project 1.', 'project1.jpg')">
+                            <img src="resources/images/showcase.jpg" alt="Project 1">
+                            <h3>Project 1</h3>
+                        </div>
+                        <div class="project"
+                            onclick="openModal('Project 2', 'This is a description of Project 2.', 'project2.jpg')">
+                            <img src="resources/images/showcase.jpg" alt="Project 2">
+                            <h3>Project 2</h3>
+                        </div>
+                        <div class="project"
+                            onclick="openModal('Project 3', 'This is a description of Project 3.', 'project3.jpg')">
+                            <img src="resources/images/showcase.jpg" alt="Project 3">
+                            <h3>Project 3</h3>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div id="projectModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img id="modalImage" src="" alt="Project Image">
+                            <h2 id="modalTitle"></h2>
+                            <p id="modalDescription"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <!-- Client Review -->
         <section id="home-review" class="text-center sec-margin">
             <div class="container">
@@ -299,11 +336,11 @@
     <div class="scroll-buttons">
         <button id="scroll-down" class="scroll-btn btn-main">
             <i class="fas fa-arrow-down"></i>
-            Scroll Down
+            Down
         </button>
         <button id="back-to-top" class="scroll-btn btn-special">
             <i class="fas fa-arrow-up"></i>
-            Back to Top
+            Top
         </button>
     </div>
 
