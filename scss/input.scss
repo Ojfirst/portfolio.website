@@ -487,7 +487,7 @@ border-color: $goldenrod;
 // Main Section B
 #home {
     &-b {
-        
+        display: none;
         background-color: $white;
         transition: all 0.6s ease-in-out;
 
@@ -571,6 +571,167 @@ border-color: $goldenrod;
     }
 }
 
+#mobile-gallery {
+    background-color: $black;
+    transition: all 0.6s ease-in-out;
+
+    .container {
+        padding: 0 0.5rem;
+    }
+
+    .container {
+        padding: 0 0.5rem;
+    }
+    
+    .content-container {
+        display: grid;
+        grid-template-columns: repeat(20px, 1fr);
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        background: linear-gradient(135deg, rgba(0, 10, 36, 0.5), rgba(9, 121, 112, 0.5)), 
+        url(../images/bg-img.jpg) no-repeat center center/cover;
+        background-size: 400% 400%;
+        animation: gradientBG 10s ease infinite;
+        margin: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* Animated Gradient Background */
+    @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    .section-title{
+        color: $medium-light-color;
+    }
+
+
+    /* Floating Particles */
+    .particles {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .particles span {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        animation: floatParticles 5s linear infinite;
+    }
+
+    @keyframes floatParticles {
+        from {
+            transform: translateY(0px); 
+            opacity: 1; 
+        }
+        to {
+            transform: translateY(-100vh); 
+            opacity: 0; 
+        }
+    }
+
+    .carousel {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: transform 1s ease-in-out;
+    }
+
+    .project-grid {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        position: relative;
+    }
+    
+    .project {
+        background: $special-color;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 20%;
+        height: 20%;
+
+        img {
+            max-width: 200px;
+            max-height: 200px;
+            border-radius: 8px;
+        }
+    }
+    
+    .project:hover {
+        transform: scale(1.08);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+    
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .modal-content {
+        background-color:$special-color;
+        padding: 20px;
+        margin: 15% auto;
+        width: 50%;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    
+    .modal img {
+        width: 80%;
+        border-radius: 8px;
+    }
+    
+    .modal-buttons {
+        margin-top: 15px;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 10px 15px;
+        margin: 5px;
+        text-decoration: none;
+        background: $special-color;
+        color: $black;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    
+    .btn:hover {
+        background: #ff8c00;
+    }
+    
+    .close {
+        float: right;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+    }   
+}
+
+
 .items a,
 .content-container a {
     margin: 1rem 0;
@@ -604,92 +765,7 @@ border-color: $goldenrod;
 //  Section D main
 #home {
     &-d {
-        background-color: $black;
-        transition: all 0.6s ease-in-out;
-
-
-        .content-container {
-            display: grid;
-            grid-template-columns: repeat(20px, 1fr);
-            justify-content: center;
-            align-items: center;
-            height: 80vh;
-            background: linear-gradient(135deg, rgba(0, 10, 36, 0.5), rgba(9, 121, 112, 0.5)), 
-            url(../images/bg-img.jpg) no-repeat center center/cover;
-            background-size: 400% 400%;
-            animation: gradientBG 10s ease infinite;
-            margin: 0;
-            overflow: hidden;
-            position: relative;
-        }
-
-        /* Animated Gradient Background */
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        .section-title{
-            color: $medium-light-color;
-        }
-
-        .gallery-container {
-            position: relative;
-            width: 300px;
-            height: 300px;
-            perspective: 1000px;
-        }
-        
-        /* Spotlight Effect */
-        .gallery-container::before {
-            content: '';
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
-            border-radius: 50%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            pointer-events: none;
-        }
-
-        /* Floating Particles */
-        .particles {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .particles span {
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            background: rgba(255, 255, 255, 0.5);
-            border-radius: 50%;
-            animation: floatParticles 5s linear infinite;
-        }
-
-        @keyframes floatParticles {
-            from {
-                transform: translateY(0px); 
-                opacity: 1; 
-            }
-            to {
-                transform: translateY(-100vh); 
-                opacity: 0; 
-            }
-        }
-
-        .carousel {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            transform-style: preserve-3d;
-            transition: transform 1s ease-in-out;
-        }
+       
         
         .image {
             position: absolute;

@@ -170,13 +170,13 @@
         </section>
 
         <!-- Section D -->
-        <section id="home-d" class="text-center sec-margin py-2">
+        <!-- <section id="home-d" class="text-center sec-margin py-2">
             <div class="container">
                 <div class="content-container">
                     <h1 class="section-title text-center box top bounce">My Soul-Driven Projects</h1>
                     <div class="particles"></div> <!-- Background Effect -->
 
-                    <div class="gallery-container">
+        <!-- <div class="gallery-container">
                         <div class="carousel box bottom">
                             <div class="image" style="--i:1;"><a href="#"><img src="resources/images/showcase.jpg"
                                         alt="Person 1"></a></div>
@@ -195,7 +195,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section id="mobile-gallery" class="text-center sec-margin py-2">
             <div class="container">
@@ -205,19 +205,24 @@
 
                     <div class="project-grid">
                         <div class="project"
-                            onclick="openModal('Project 1', 'This is a description of Project 1.', 'project1.jpg')">
+                            onclick="openModal('Project 1', 'This is a modernized version of Project 1.', 'project1.jpg', 'https://liveproject1.com', 'https://github.com/project1')">
                             <img src="resources/images/showcase.jpg" alt="Project 1">
                             <h3>Project 1</h3>
                         </div>
                         <div class="project"
-                            onclick="openModal('Project 2', 'This is a description of Project 2.', 'project2.jpg')">
+                            onclick="openModal('Project 2', 'Project 2 now includes futuristic UI elements.', 'project2.jpg', 'https://liveproject2.com', 'https://github.com/project2')">
                             <img src="resources/images/showcase.jpg" alt="Project 2">
                             <h3>Project 2</h3>
                         </div>
                         <div class="project"
-                            onclick="openModal('Project 3', 'This is a description of Project 3.', 'project3.jpg')">
+                            onclick="openModal('Project 3', 'This project now supports AI-powered features.', 'project3.jpg', 'https://liveproject3.com', 'https://github.com/project3')">
                             <img src="resources/images/showcase.jpg" alt="Project 3">
                             <h3>Project 3</h3>
+                        </div>
+                        <div class="project"
+                            onclick="openModal('Project 3', 'This project now supports AI-powered features.', 'project4.jpg', 'https://liveproject3.com', 'https://github.com/project4')">
+                            <img src="resources/images/showcase.jpg" alt="Project 4">
+                            <h3>Project 4</h3>
                         </div>
                     </div>
 
@@ -228,6 +233,10 @@
                             <img id="modalImage" src="" alt="Project Image">
                             <h2 id="modalTitle"></h2>
                             <p id="modalDescription"></p>
+                            <div class="modal-buttons">
+                                <a id="liveDemo" href="#" target="_blank" class="btn">🔗 View Live</a>
+                                <a id="githubRepo" href="#" target="_blank" class="btn">💻 GitHub</a>
+                            </div>
                         </div>
                     </div>
 

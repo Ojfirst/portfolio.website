@@ -611,6 +611,7 @@ which is now invincible */
 }
 
 #home-b {
+  display: none;
   background-color: #fff;
   transition: all 0.6s ease-in-out;
 }
@@ -679,6 +680,148 @@ which is now invincible */
   color: #ccc;
 }
 
+#mobile-gallery {
+  background-color: #000;
+  transition: all 0.6s ease-in-out;
+  /* Animated Gradient Background */
+  /* Floating Particles */
+}
+#mobile-gallery .container {
+  padding: 0 0.5rem;
+}
+#mobile-gallery .container {
+  padding: 0 0.5rem;
+}
+#mobile-gallery .content-container {
+  display: grid;
+  grid-template-columns: repeat(20px, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: linear-gradient(135deg, rgba(0, 10, 36, 0.5), rgba(9, 121, 112, 0.5)), url(../images/bg-img.jpg) no-repeat center center/cover;
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#mobile-gallery .section-title {
+  color: #ccc;
+}
+#mobile-gallery .particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#mobile-gallery .particles span {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  animation: floatParticles 5s linear infinite;
+}
+@keyframes floatParticles {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+#mobile-gallery .carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s ease-in-out;
+}
+#mobile-gallery .project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+#mobile-gallery .project {
+  background: linear-gradient(90deg, #ff8c00, #ff2d55);
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 20%;
+  height: 20%;
+}
+#mobile-gallery .project img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 8px;
+}
+#mobile-gallery .project:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+#mobile-gallery .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#mobile-gallery .modal-content {
+  background-color: linear-gradient(90deg, #ff8c00, #ff2d55);
+  padding: 20px;
+  margin: 15% auto;
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+#mobile-gallery .modal img {
+  width: 80%;
+  border-radius: 8px;
+}
+#mobile-gallery .modal-buttons {
+  margin-top: 15px;
+}
+#mobile-gallery .btn {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px;
+  text-decoration: none;
+  background: linear-gradient(90deg, #ff8c00, #ff2d55);
+  color: #000;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+#mobile-gallery .btn:hover {
+  background: #ff8c00;
+}
+#mobile-gallery .close {
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .items a,
 .content-container a {
   margin: 1rem 0;
@@ -705,89 +848,8 @@ which is now invincible */
 }
 
 #home-d {
-  background-color: #000;
-  transition: all 0.6s ease-in-out;
-  /* Animated Gradient Background */
-  /* Spotlight Effect */
-  /* Floating Particles */
   /* Reflection Effect */
   /* Button Styling */
-}
-#home-d .content-container {
-  display: grid;
-  grid-template-columns: repeat(20px, 1fr);
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  background: linear-gradient(135deg, rgba(0, 10, 36, 0.5), rgba(9, 121, 112, 0.5)), url(../images/bg-img.jpg) no-repeat center center/cover;
-  background-size: 400% 400%;
-  animation: gradientBG 10s ease infinite;
-  margin: 0;
-  overflow: hidden;
-  position: relative;
-}
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-#home-d .section-title {
-  color: #ccc;
-}
-#home-d .gallery-container {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
-#home-d .gallery-container::before {
-  content: "";
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-}
-#home-d .particles {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-#home-d .particles span {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  animation: floatParticles 5s linear infinite;
-}
-@keyframes floatParticles {
-  from {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(-100vh);
-    opacity: 0;
-  }
-}
-#home-d .carousel {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: transform 1s ease-in-out;
 }
 #home-d .image {
   position: absolute;
@@ -1418,145 +1480,9 @@ which is now invincible */
     gap: 1rem;
     background-color: #333;
   }
-  #home-d {
-    display: none;
-  }
-  #mobile-gallery {
-    background-color: #000;
-    transition: all 0.6s ease-in-out;
-    /* Animated Gradient Background */
-    /* Spotlight Effect */
-    /* Floating Particles */
-  }
-  #mobile-gallery .container {
-    padding: 0 0.5rem;
-  }
-  #mobile-gallery .content-container {
-    display: grid;
-    grid-template-columns: repeat(20px, 1fr);
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    background: linear-gradient(135deg, rgba(0, 10, 36, 0.5), rgba(9, 121, 112, 0.5)), url(../images/bg-img.jpg) no-repeat center center/cover;
-    background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
-    margin: 0;
-    overflow: hidden;
-    position: relative;
-  }
-  @keyframes gradientBG {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  #mobile-gallery .section-title {
-    color: #ccc;
-  }
-  #mobile-gallery .gallery-container {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-  }
-  #mobile-gallery .gallery-container::before {
-    content: "";
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-  }
-  #mobile-gallery .particles {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  #mobile-gallery .particles span {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 50%;
-    animation: floatParticles 5s linear infinite;
-  }
-  @keyframes floatParticles {
-    from {
-      transform: translateY(0px);
-      opacity: 1;
-    }
-    to {
-      transform: translateY(-100vh);
-      opacity: 0;
-    }
-  }
-  #mobile-gallery .carousel {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-    transition: transform 1s ease-in-out;
-  }
-  #mobile-gallery .project-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
   #mobile-gallery .project {
-    background: linear-gradient(90deg, #ff8c00, #ff2d55);
-    color: #000;
-    padding: 5px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  #mobile-gallery .project:hover {
-    transform: scale(1.05);
-  }
-  #mobile-gallery .project img {
-    max-width: 120px;
-    max-height: 150px;
-    border-radius: 8px;
-  }
-  #mobile-gallery .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  #mobile-gallery .modal-content {
-    background-color: white;
-    padding: 20px;
-    margin: 15% auto;
-    width: 50%;
-    border-radius: 10px;
-    text-align: center;
-  }
-  #mobile-gallery .modal img {
-    width: 80%;
-    border-radius: 8px;
-  }
-  #mobile-gallery .close {
-    float: right;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
+    min-width: 110px;
+    min-height: 110px;
   }
   #home-e .contact-info {
     padding: 0.5rem 0;
@@ -1662,9 +1588,6 @@ which is now invincible */
   #home-b .items p {
     font-size: 0.5rem;
   }
-  #mobile-gallery {
-    display: none;
-  }
   #header-inner .Hero-msg-container {
     margin-top: 15rem;
   }
@@ -1714,9 +1637,6 @@ which is now invincible */
   #home-b .items p {
     font-size: 0.5rem;
   }
-  #mobile-gallery {
-    display: none;
-  }
   #home-d .content-container {
     height: 40vh;
   }
@@ -1730,11 +1650,6 @@ which is now invincible */
     line-height: 1;
     margin-top: rem;
     min-height: 100px;
-  }
-}
-@media screen and (min-width: 1101px) {
-  #mobile-gallery {
-    display: none;
   }
 }
 @media (max-height: 500px) {
@@ -1796,15 +1711,6 @@ which is now invincible */
     gap: 1rem;
     background-color: #333;
   }
-  #home-d .content-container {
-    height: 80vh;
-  }
-  #home-d .content-container .image {
-    width: 115px;
-    height: 140px;
-    left: 50%;
-    top: 40%;
-  }
   #home-e .contact-info {
     padding: 0.5rem 0;
   }
@@ -1856,9 +1762,6 @@ which is now invincible */
   }
   #header-home .Hero-msg-container {
     margin-top: 2rem;
-  }
-  #home-d .content-container {
-    height: 70vh;
   }
 }
 
