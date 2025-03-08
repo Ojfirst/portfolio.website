@@ -1175,19 +1175,19 @@ which is now invincible */
     display: none;
   }
   .scroll-buttons {
-    bottom: 20px;
+    bottom: 140px;
     right: 20px;
   }
   #header-home {
-    height: 100vh;
+    height: 80vh;
   }
   #header-home .Hero-msg-container {
-    margin-top: 6.5rem;
+    margin-top: 4rem;
   }
   #header-home .Hero-msg-container h1 {
     font-size: 32px;
     display: block;
-    min-height: 190px;
+    min-height: 195px;
   }
   #header-home .Hero-msg-container h1 span {
     font-size: 1.3rem;
