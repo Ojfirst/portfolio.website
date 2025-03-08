@@ -1,3 +1,190 @@
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.btn-dark, .btn-special, .btn-main {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+  border-radius: 10rem;
+}
+
+.btn-main {
+  color: #333;
+  background: goldenrod;
+}
+.btn-special {
+  color: #fff;
+  background: linear-gradient(90deg, #ff8c00, #ff2d55);
+}
+.btn-dark {
+  color: #fff;
+  background: #272727;
+}
+
+a[class^=btn-]:hover,
+button[class^=btn-]:hover,
+input[class^=btn-]:hover {
+  opacity: 0.7;
+}
+
+button[class^=btn-]:active,
+a[class^=btn-]:active,
+input[class^=btn-]:active {
+  background-color: goldenrod;
+  color: #333;
+  opacity: 0.7;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+text.shadow {
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+.sec-margin {
+  margin: 2.5rem;
+}
+
+.section-title {
+  font-size: 1.7rem;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.content-container {
+  padding: 1rem;
+  color: #f4f4f4;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.box {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 0.6s ease-in-out 0.6s;
+}
+
+.box.bottom {
+  transform: translateY(100px);
+}
+
+.box.right {
+  transform: translateX(100px);
+}
+
+.box.left {
+  transform: translateX(-100px);
+}
+
+.box.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+
+.bounce {
+  display: inline-block;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.bounce-2 {
+  display: inline-block;
+  animation: bounce-2 2s infinite ease-in-out;
+}
+
+@keyframes bounce-2 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, -20px);
+  }
+  50% {
+    transform: translateY(-20px, 20px);
+  }
+  75% {
+    transform: translateY(10px, -10px);
+  }
+}
+.bounce-hover:hover {
+  animation: hoverBounce 0.5s ease-in-out;
+}
+
+@keyframes hoverBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+#section-section {
+  background: #f4f4f4;
+  color: #000;
+  margin: 0;
+}
+#section-section .content {
+  color: #000;
+}
+
+h1 span {
+  font-size: 2rem;
+  color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -439,7 +626,7 @@ which is now invincible */
   align-items: center;
   border: 1px solid rgb(73, 52, 0);
   border-radius: 0.3rem;
-  Background: #333;
+  background: #333;
   padding: 0.5rem 0.5rem;
   cursor: pointer;
 }
@@ -604,8 +791,8 @@ which is now invincible */
 }
 #home-d .image {
   position: absolute;
-  max-width: 150px;
-  max-height: 200px;
+  width: 150px;
+  height: 200px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) rotateY(calc(var(--i) * 72deg)) translateZ(300px);
@@ -818,6 +1005,13 @@ which is now invincible */
   justify-content: center;
   align-items: center;
 }
+#foot-main > div p:nth-last-of-type(2) {
+  text-align: center;
+}
+#foot-main > div p:last-of-type {
+  text-align: center;
+  font-weight: bolder;
+}
 #foot-main .socials > a {
   padding: 0 0.5rem;
 }
@@ -829,11 +1023,13 @@ which is now invincible */
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-size: 0.6rem;
   z-index: 20;
 }
 .scroll-buttons .scroll-btn {
   display: flex;
   align-items: center;
+  padding: 0.5rem 1rem;
   gap: 5px;
   outline: none;
   transition: all 0.3s ease-in-out;
@@ -1095,7 +1291,6 @@ which is now invincible */
 
 #service-offered {
   background-color: #fff;
-  transition: all 0.6s ease-in-out;
 }
 #service-offered .grid-content {
   gap: 20px;
