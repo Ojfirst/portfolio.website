@@ -39,7 +39,7 @@
         height: 80vh;
 
         .Hero-msg-container {
-            margin-top: 4rem;
+            margin-top: 7rem;
 
             h1 {
                 font-size: 32px;
@@ -362,6 +362,7 @@
 }
 
 // Landscape 
+
 @media(max-height: 500px) {
     .sec-margin {
         margin: 1rem;
@@ -383,7 +384,7 @@
 
     #nav_bar {
 
-        height: 61px;
+        height: 100px;
         ul {
             display: none;
         }
@@ -394,23 +395,29 @@
     #header-home {
         height: 100vh;
 
+        .container {
+            padding: 0 0.5rem;
+        }
+
         .Hero-msg-container {
             margin-top: 0rem;
 
             h1 {
-                font-size: 30px;
+                font-size: 27px;
                 display: block;
-                min-height: 90px;
+                min-height: 70px;
+                margin-top: 0rem;
+                padding-top: 0rem;
                 
                 span {
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                 }
             }
 
             p {
                 display: block;
-                font-size: 16px;
-                min-height: 60px;
+                font-size: 14px;
+                min-height: 30px;
             }
         }
         
@@ -531,5 +538,6 @@
             margin-top: 2rem;
         }
     }
+
 
 }

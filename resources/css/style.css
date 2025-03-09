@@ -759,7 +759,8 @@ which is now invincible */
 }
 #mobile-gallery .project {
   background: linear-gradient(90deg, #ff8c00, #ff2d55);
-  padding: 5px;
+  color: #ccc;
+  padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -1439,7 +1440,7 @@ which is now invincible */
     height: 80vh;
   }
   #header-home .Hero-msg-container {
-    margin-top: 4rem;
+    margin-top: 7rem;
   }
   #header-home .Hero-msg-container h1 {
     font-size: 32px;
@@ -1664,7 +1665,7 @@ which is now invincible */
     display: block;
   }
   #nav_bar {
-    height: 61px;
+    height: 100px;
   }
   #nav_bar ul {
     display: none;
@@ -1672,21 +1673,26 @@ which is now invincible */
   #header-home {
     height: 100vh;
   }
+  #header-home .container {
+    padding: 0 0.5rem;
+  }
   #header-home .Hero-msg-container {
     margin-top: 0rem;
   }
   #header-home .Hero-msg-container h1 {
-    font-size: 30px;
+    font-size: 27px;
     display: block;
-    min-height: 90px;
+    min-height: 70px;
+    margin-top: 0rem;
+    padding-top: 0rem;
   }
   #header-home .Hero-msg-container h1 span {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   #header-home .Hero-msg-container p {
     display: block;
-    font-size: 16px;
-    min-height: 60px;
+    font-size: 14px;
+    min-height: 30px;
   }
   #header-home .expertise {
     display: none;
