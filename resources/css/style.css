@@ -204,7 +204,7 @@ body {
   font-family: "lato", sans-serif;
   line-height: 1.6;
   background: #fff;
-  background-color: #ccc;
+  background-color: #f4f4f4;
 }
 
 a {
@@ -606,7 +606,7 @@ which is now invincible */
 }
 
 #home-a {
-  background: #f4f4f4;
+  background: #fff;
   transition: all 0.6s ease-in-out;
 }
 #home-a .content-container {
@@ -849,7 +849,7 @@ which is now invincible */
 }
 
 #home-c {
-  background: #f4f4f4;
+  background: #fff;
   color: #000;
   transition: all 0.6s ease-in-out;
 }
@@ -1158,6 +1158,13 @@ which is now invincible */
   padding: 0 5rem;
   padding-bottom: 3rem;
   text-align: justify;
+}
+#about .about-2 ul {
+  display: flex;
+  text-align: left;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  list-style: none;
 }
 
 #skills {

@@ -17,7 +17,7 @@ body {
     font-family: 'lato', sans-serif;
     line-height: 1.6;
     background: $white;
-    background-color: $medium-light-color;
+    background-color: $light-color;
 }
 
 a {
@@ -471,7 +471,7 @@ border-color: $goldenrod;
 // Main Section A 
 #home {
     &-a {
-        background: $light-color;
+        background: $white;
         transition: all 0.6s ease-in-out;
 
         .content-container {
@@ -759,7 +759,7 @@ border-color: $goldenrod;
 //  Section C main
 #home {
     &-c {
-        background: $light-color;
+        background: $white;
         color: $black;
         transition: all 0.6s ease-in-out;
 
@@ -1143,6 +1143,14 @@ border-color: $goldenrod;
         padding: 0 5rem;
         padding-bottom: 3rem;
         text-align: justify;
+
+        ul {
+            display: flex;
+            text-align: left;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            list-style: none;
+        }
     }
 }
 
