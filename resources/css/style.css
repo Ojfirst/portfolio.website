@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-.btn-dark, .btn-special, .btn-main {
+.btn-light, .btn-dark, .btn-special, .btn-main {
   display: inline-block;
   padding: 0.5rem 1.5rem;
   transition: all 0.3s ease-in-out;
@@ -25,6 +25,11 @@
 .btn-dark {
   color: #fff;
   background: #272727;
+}
+.btn-light {
+  color: #000;
+  background: #777;
+  border: 1px solid #333;
 }
 
 a[class^=btn-]:hover,
@@ -531,10 +536,26 @@ which is now invincible */
     background-color: transparent;
   }
 }
+#header-home .social-links {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#header-home .social-links a {
+  color: #fff;
+  font-size: 1rem;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+#header-home .social-links a:hover {
+  color: goldenrod;
+}
 #header-home .expertise {
   position: absolute;
-  top: 350px;
-  right: -250px;
   max-width: 300px;
   border-radius: 0.3rem;
   padding: 0.5rem;
@@ -546,7 +567,7 @@ which is now invincible */
 }
 @keyframes slid {
   100% {
-    top: 350px;
+    top: 450px;
     right: 50px;
   }
 }

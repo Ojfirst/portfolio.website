@@ -34,6 +34,12 @@
         color: $white;
         background: $main-color;
     }
+    &-light {
+        @extend %btn-shared;
+        color: $black;
+        background: $medium-color;
+        border: 1px solid $dark-color;
+    }
 }
 
 // General effect on buttons on hover

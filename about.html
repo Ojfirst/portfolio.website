@@ -2,359 +2,365 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="resources/css/style.css">
-    <script src="resources/js/main.js" defer></script>
-    <script src="resources/js/formvalidation.js" defer></script>
-    <script src="resources/js/typewriter.js" defer></script>
-    <script src="resources/js/animation.js" defer></script>
-    <script src="resources/js/faq.js" defer></script>
-    <title>ABOUT ME | OJFirst Web Apps | Full-Stack Web Developer, Softwear Engineer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="I build scalable, revenue-driving web applications for startups and small businesses. Specializing in React, Next.js, and Node.js. With 20+ years of experience, I deliver high-quality solutions that drive growth and success.">
+
+  <meta name="keywords"
+    content="Full-Stack Developer, Web Developer, Software Engineer, React Developer, Next.js Developer, Node.js Developer, Scalable Web Applications, Startup Web Solutions, Small Business Web Development, JavaScript Developer, Frontend Developer, Backend Developer, MERN Stack Developer">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Simon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <script src="resources/js/main.js" defer></script>
+  <script src="resources/js/formvalidation.js" defer></script>
+  <script src="resources/js/typewriter.js" defer></script>
+  <script src="resources/js/animation.js" defer></script>
+  <script src="resources/js/faq.js" defer></script>
+  <title>OJFirst Web Apps - Developer for startups & SMBs | React & Next.js Expert</title>
 </head>
 
 <body>
-    <!-- Progress bar -->
-    <div class="scroll-progress-container">
-        <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+  <!-- Progress bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- hamburger menu -->
+  <div class="menu-wrap">
+    <!-- The check box is just for functionality -->
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+      <!-- Inner Div, used to create line 'Hamburger lines inside' -->
+      <div></div>
     </div>
-
-    <!-- hamburger menu -->
-    <div class="menu-wrap">
-        <!-- The check box is just for functionality -->
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-            <!-- Inner Div, used to create line 'Hamburger lines inside' -->
-            <div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html#home-e">Contact</a></li>
+          </ul>
         </div>
-        <div class="menu">
-            <div>
-                <div>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="project.html">Projects</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="index.html#home-e">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Header -->
-    <header id="header-inner">
-        <div class="container">
+  <!-- Header -->
+  <header id="header-inner">
+    <div class="container">
 
-            <nav id="nav_bar">
-                <img src="resources/images/nav_logo.jpg" alt="logo" id="logo">
+      <nav id="nav_bar">
+        <img src="resources/images/nav_logo.jpg" alt="logo" id="logo">
 
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html" class="current">ABOUT</a></li>
-                    <li><a href="projrct.html">PROJECT</a></li>
-                    <li><a href="services.html">SERVICES</a></li>
-                    <li><a href="index.html#home-e">CONTACT</a></li>
-                </ul>
-                <button id="theme-toggle">🌙 Dark Mode</button>
-            </nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html" class="current">ABOUT</a></li>
+          <li><a href="projrct.html">PROJECT</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="index.html#home-e">CONTACT</a></li>
+        </ul>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+      </nav>
 
-            <div class="Hero-msg-container">
-                <h1>Hi, I'm Omojide,
-                    <span class="txt-type" data-wait="3000" data-words='["A Web Developer & Auto Expert"]'></span>
-                </h1>
-                <p class="lead">
-                    <span id="typing-text"></span>
-                    <span class="cursor">|</span>
-                </p>
-                <a href="index.html#home-e" id="hero-btn" class="btn-main">Contact Me</a>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <!-- About and Experience -->
-        <section id="about" class="text-center sec-margin py-2">
-            <div class="container about-1">
-                <div class="about-text">
-                    <h2 class="section-title lead box top">About Me</h2>
-                    <p class="box bottom">With over 25 years in the automobile industry and expertise in web
-                        development, I create
-                        seamless
-                        digital solutions while helping clients find the best international vehicles.</p>
-                </div>
-                <div class="about-timeline box right">
-                    <ul>
-                        <li>🚗 25+ years in the automobile industry</li>
-                        <li>💻 Expert in Laravel, React, JavaScript</li>
-                        <li>🌍 Founder of Ojfirst Autos</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- More on ABout -->
-        <section id="about" class="sec-margin py-2">
-            <div class="container about-2">
-                <div class="about-more-section">
-                    <h1 class="section-title text-center lead box top">Let me tell you a little moreabout myself and
-                        what I do...
-                    </h1>
-                    <div class="content">
-                        <div class="biography">
-                            <p class="box bottom">I’m a passionate web developer with a deep love for crafting clean,
-                                highly
-                                functional,
-                                and
-                                efficient
-                                websites. My journey in programming started as a curiosity and quickly evolved into
-                                a
-                                full-fledged passion.
-                                Every line of code I write is driven by my dedication to problem-solving,
-                                performance,
-                                and
-                                user
-                                experience.
-
-                                I specialize in PHP and Laravel, a framework I deeply admire for its elegance,
-                                flexibility,
-                                and
-                                power.
-                                There’s something truly satisfying about using Laravel to build scalable,
-                                well-structured,
-                                and
-                                secure web
-                                applications. Whether it’s a custom business solution, an e-commerce platform, or an
-                                API-driven
-                                system, I
-                                take pride in writing clean, maintainable code that stands the test of time.
-
-                                Beyond coding, my heart beats for automobiles and car sales. Having grown up in a
-                                family
-                                of
-                                automobile
-                                sellers and with 25+ years of experience in the industry, I understand the business
-                                inside
-                                and
-                                out. Cars
-                                aren’t just machines to me; they’re stories, craftsmanship, and innovation on
-                                wheels.
-                                This
-                                unique blend of
-                                tech expertise and automotive knowledge gives me a special edge in creating powerful
-                                digital
-                                solutions for
-                                the auto industry and beyond.
-
-                                When I’m not coding or working with cars, I’m exploring new technologies, refining
-                                my
-                                skills,
-                                and pushing
-                                the boundaries of what’s possible in web development. I’m always open to exciting
-                                projects
-                                and
-                                collaborations, so feel free to reach out—let’s build something amazing together!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Showcase -->
-        <section id="skills" class="text-center sec-margin py-2">
-            <div class="container about-1">
-                <div class="skills">
-                    <h2 class="section-title lead box top">My Skills</h2>
-                    <div class="skills-grid">
-                        <div class="skill-card box left">JavaScript <i class="fa-brands fa-js fa-2x"></i></div>
-                        <div class="skill-card box left">React <i class="fa-brands fa-react fa-2x"></i></div>
-                        <div class="skill-card box left">Php <i class="fa-brands fa-php fa-2x"></i></div>
-                        <div class="skill-card box right">Laravel <i class="fa-brands fa-laravel fa-2x"></i></div>
-                        <div class="skill-card box right">🌍 Automobile Import & Sales</div>
-                        <div class="skill-card box right">Business Strategy</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Frequently Asked Question -->
-        <section id="faq" class="sec-margin py-2">
-            <div class="container">
-                <div class="section">
-                    <h1 class="section-title text-center lead box top">Frequently Asked Question</h1>
-                    <div class="faq-container">
-                        <div class="faq">
-                            <h4 class="faq-title">What services do you offer as a web developer?</h4>
-
-                            <p class="faq-text">I specialize in building scalable web applications using Laravel,
-                                React, and JavaScript.</p>
-
-                            <button class="faq-toggle">
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <div class="faq">
-                            <h4 class="faq-title">Can you build a custom website for my business?</h4>
-
-                            <p class="faq-text">Yes, I offer custom web development services tailored to your business
-                                needs, whether it's an e-commerce store, a portfolio site, or a web application.</p>
-
-                            <button class="faq-toggle">
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <div class="faq">
-                            <h4 class="faq-title">Do you provide website maintenance and update?</h4>
-
-                            <p class="faq-text">Yes, i offer ongoing maintenance and updates to ensure your website
-                                remains secure, functional, and up to date.</p>
-
-                            <button class="faq-toggle">
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <div class="faq">
-                            <h4 class="faq-title">What technologies do you specialize in?</h4>
-
-                            <p class="faq-text">I specialize in Laravel (PHP). React(JavaScript), and other web
-                                technologies for creating dynamic and efficient web applications</p>
-
-                            <button class="faq-toggle">
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <div class="faq">
-                            <h4 class="faq-title">How long does it take to complete a project?</h4>
-
-                            <p class="faq-text">The timeline depends on the project scope. A simple website can take a
-                                fews weeks, while more complex application may take months. Let's discuss your
-                                application for an accurate estimation.</p>
-
-                            <button class="faq-toggle">
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <div class="faq">
-                            <h4 class="faq-title">What type of vehicles do you sell?</h4>
-
-                            <p class="faq-text">Through Ojfirst Autos, I specialize in internationally imported
-                                vehicles, offering a wide range of cars, from luxury brands to affordable options.</p>
-
-                            <button class="faq-toggle">
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <div class="faq">
-                            <h4 class="faq-title">Do you offer vehcile importation services?</h4>
-
-                            <p class="faq-text">Yes, I can assist with vehcile importation, handling everthing from
-                                sourcing to shipping.</p>
-
-                            <button class="faq-toggle">
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <div class="faq">
-                            <h4 class="faq-title">Can I request a specific car model?</h4>
-
-                            <p class="faq-text">Absolutely! If you have a specific car in mind, I can soucrce it based
-                                on your budget and preferences.</p>
-
-                            <button class="faq-toggle">
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <div class="faq">
-                            <h4 class="faq-title">Is Ojfirst Autos available outside Nigeria?</h4>
-
-                            <p class="faq-text">Currently, Ojfirst Autos operates in Nigeria, but our goal is to expand
-                                globally.</p>
-
-                            <button class="faq-toggle">
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        <div class="faq">
-                            <h4 class="faq-title">Is Ojfirst Autos looking to partner with exporters outside Nigeria?
-                            </h4>
-
-                            <p class="faq-text">Yes!.</p>
-
-                            <button class="faq-toggle">
-                                <i class="fas fa-chevron-down"></i>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Call to Action -->
-        <section id="cta" class="text-center sec-margin">
-            <div class="container about-1">
-                <div class="cta">
-                    <h2 class="section-title lead box top">Let's Work Together</h2>
-                    <p>Looking for a high-quality website or a trusted automobile dealer? Let’s connect!</p>
-                    <a href="index.html#home-e" class="btn-special my-1">Get in Touch</a>
-                </div>
-            </div>
-        </section>
-
-
-    </main>
-
-    <footer id="foot-main">
-        <div class="content-container my-1">
-            <P>&COPY; 2025 All Right Reserved</P>
-            <p>This website is a copyright of and maintained by</p>
-            <p>Omojide Oluwafemi</p>
-            <div class="flex-items socials py-1">
-                <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
-                <a href=""><i class="fa-brands fa-x-twitter fa-2x"></i></a>
-                <a href=""><i class="fa-brands fa-discord fa-2x"></i></a>
-                <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
-                <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Top and Bottom Navigation -->
-    <div class="scroll-buttons">
-        <button id="scroll-down" class="scroll-btn btn-main">
-            <i class="fas fa-arrow-down"></i>
-            Down
-        </button>
-        <button id="back-to-top" class="scroll-btn btn-special">
-            <i class="fas fa-arrow-up"></i>
-            Top
-        </button>
+      <div class="Hero-msg-container">
+        <h1> Ojfirst Web Apps,
+          <span class="txt-type" data-wait="3000"
+            data-words='["I Build Web Applications That Solve Business Problems"]'></span>
+        </h1>
+        <p class="lead">
+          <span id="typing-text"></span>
+          <span class="cursor">|</span>
+        </p>
+        <a href="index.html#home-e" id="hero-btn" class="btn-light">View My Work</a> |
+        <a href="index.html#home-e" id="hero-btn" class="btn-special">Lets Discuss Your Project</a>
+      </div>
     </div>
+  </header>
+
+  <main>
+    <!-- About and Experience -->
+    <section id="about" class="text-center sec-margin py-2">
+      <div class="container about-1">
+        <div class="about-text">
+          <h2 class="section-title lead box top">About Me</h2>
+          <p class="box bottom">Freelance React, Next.js & Node.js Developer specializing in building scalable web applications for startups and small businesses that need to boost visibility, increase revenue, and grow their customer base.</p>
+        </div>
+        <div class="about-timeline box right">
+          <ul>
+            <li>🚗 20+ years in the automobile industry</li>
+            <li>💻 Expert in React, Next.js & Node.js/Nest.js</li>
+            <li>🌍 Founder of Ojfirst Autos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- More on ABout -->
+    <section id="about" class="sec-margin py-2">
+      <div class="container about-2">
+        <div class="about-more-section">
+          <h1 class="section-title text-center lead box top">Let me tell you a little moreabout myself and
+            what I do...
+          </h1>
+          <div class="content">
+            <div class="biography">
+              <p class="box bottom">I’m a passionate web developer with a deep love for crafting clean,
+                highly
+                functional,
+                and
+                efficient
+                websites. My journey in programming started as a curiosity and quickly evolved into
+                a
+                full-fledged passion.
+                Every line of code I write is driven by my dedication to problem-solving,
+                performance,
+                and
+                user
+                experience.
+
+                I specialize in PHP and Laravel, a framework I deeply admire for its elegance,
+                flexibility,
+                and
+                power.
+                There’s something truly satisfying about using Laravel to build scalable,
+                well-structured,
+                and
+                secure web
+                applications. Whether it’s a custom business solution, an e-commerce platform, or an
+                API-driven
+                system, I
+                take pride in writing clean, maintainable code that stands the test of time.
+
+                Beyond coding, my heart beats for automobiles and car sales. Having grown up in a
+                family
+                of
+                automobile
+                sellers and with 25+ years of experience in the industry, I understand the business
+                inside
+                and
+                out. Cars
+                aren’t just machines to me; they’re stories, craftsmanship, and innovation on
+                wheels.
+                This
+                unique blend of
+                tech expertise and automotive knowledge gives me a special edge in creating powerful
+                digital
+                solutions for
+                the auto industry and beyond.
+
+                When I’m not coding or working with cars, I’m exploring new technologies, refining
+                my
+                skills,
+                and pushing
+                the boundaries of what’s possible in web development. I’m always open to exciting
+                projects
+                and
+                collaborations, so feel free to reach out—let’s build something amazing together!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Showcase -->
+    <section id="skills" class="text-center sec-margin py-2">
+      <div class="container about-1">
+        <div class="skills">
+          <h2 class="section-title lead box top">My Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card box left">JavaScript <i class="fa-brands fa-js fa-2x"></i></div>
+            <div class="skill-card box left">React <i class="fa-brands fa-react fa-2x"></i></div>
+            <div class="skill-card box left">Php <i class="fa-brands fa-php fa-2x"></i></div>
+            <div class="skill-card box right">Laravel <i class="fa-brands fa-laravel fa-2x"></i></div>
+            <div class="skill-card box right">🌍 Automobile Import & Sales</div>
+            <div class="skill-card box right">Business Strategy</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Question -->
+    <section id="faq" class="sec-margin py-2">
+      <div class="container">
+        <div class="section">
+          <h1 class="section-title text-center lead box top">Frequently Asked Question</h1>
+          <div class="faq-container">
+            <div class="faq">
+              <h4 class="faq-title">What services do you offer as a web developer?</h4>
+
+              <p class="faq-text">I specialize in building scalable web applications using Laravel,
+                React, and JavaScript.</p>
+
+              <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="faq">
+              <h4 class="faq-title">Can you build a custom website for my business?</h4>
+
+              <p class="faq-text">Yes, I offer custom web development services tailored to your business
+                needs, whether it's an e-commerce store, a portfolio site, or a web application.</p>
+
+              <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="faq">
+              <h4 class="faq-title">Do you provide website maintenance and update?</h4>
+
+              <p class="faq-text">Yes, i offer ongoing maintenance and updates to ensure your website
+                remains secure, functional, and up to date.</p>
+
+              <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="faq">
+              <h4 class="faq-title">What technologies do you specialize in?</h4>
+
+              <p class="faq-text">I specialize in Laravel (PHP). React(JavaScript), and other web
+                technologies for creating dynamic and efficient web applications</p>
+
+              <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="faq">
+              <h4 class="faq-title">How long does it take to complete a project?</h4>
+
+              <p class="faq-text">The timeline depends on the project scope. A simple website can take a
+                fews weeks, while more complex application may take months. Let's discuss your
+                application for an accurate estimation.</p>
+
+              <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="faq">
+              <h4 class="faq-title">What type of vehicles do you sell?</h4>
+
+              <p class="faq-text">Through Ojfirst Autos, I specialize in internationally imported
+                vehicles, offering a wide range of cars, from luxury brands to affordable options.</p>
+
+              <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="faq">
+              <h4 class="faq-title">Do you offer vehcile importation services?</h4>
+
+              <p class="faq-text">Yes, I can assist with vehcile importation, handling everthing from
+                sourcing to shipping.</p>
+
+              <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="faq">
+              <h4 class="faq-title">Can I request a specific car model?</h4>
+
+              <p class="faq-text">Absolutely! If you have a specific car in mind, I can soucrce it based
+                on your budget and preferences.</p>
+
+              <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="faq">
+              <h4 class="faq-title">Is Ojfirst Autos available outside Nigeria?</h4>
+
+              <p class="faq-text">Currently, Ojfirst Autos operates in Nigeria, but our goal is to expand
+                globally.</p>
+
+              <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="faq">
+              <h4 class="faq-title">Is Ojfirst Autos looking to partner with exporters outside Nigeria?
+              </h4>
+
+              <p class="faq-text">Yes!.</p>
+
+              <button class="faq-toggle">
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Call to Action -->
+    <section id="cta" class="text-center sec-margin">
+      <div class="container about-1">
+        <div class="cta">
+          <h2 class="section-title lead box top">Let's Work Together</h2>
+          <p>Looking for a high-quality website or a trusted automobile dealer? Let’s connect!</p>
+          <a href="index.html#home-e" class="btn-special my-1">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer id="foot-main">
+    <div class="content-container my-1">
+      <P>&COPY; 2025 All Right Reserved</P>
+      <p>This website is a copyright of and maintained by</p>
+      <p>Omojide Oluwafemi</p>
+      <div class="flex-items socials py-1">
+        <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        <a href=""><i class="fa-brands fa-discord fa-2x"></i></a>
+        <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Top and Bottom Navigation -->
+  <div class="scroll-buttons">
+    <button id="scroll-down" class="scroll-btn btn-main">
+      <i class="fas fa-arrow-down"></i>
+      Down
+    </button>
+    <button id="back-to-top" class="scroll-btn btn-special">
+      <i class="fas fa-arrow-up"></i>
+      Top
+    </button>
+  </div>
 
 </body>
 
