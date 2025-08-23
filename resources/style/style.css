@@ -494,7 +494,7 @@ which is now invincible */
 }
 
 #header-home {
-  background: linear-gradient(135deg, rgba(0, 10, 36, 0.5), rgba(0, 121, 112, 0.5)), url("../images/bg-img.jpg") no-repeat center center/cover;
+  background: linear-gradient(135deg, rgba(0, 10, 36, 0.5), rgba(9, 121, 112, 0.5)), url("../images/bg-img.jpg") no-repeat center center/cover;
   height: 100vh;
   color: #ccc;
   position: relative;

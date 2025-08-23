@@ -494,7 +494,7 @@ which is now invincible */
 }
 
 #header-home {
-  background: linear-gradient(135deg, rgba(0, 10, 36, 0.5), rgba(0, 121, 112, 0.5)), url("../images/bg-img.jpg") no-repeat center center/cover;
+  background: linear-gradient(135deg, rgba(0, 10, 36, 0.5), rgba(9, 121, 112, 0.5)), url("../images/compLogo.jpg") no-repeat center center/cover;
   height: 100vh;
   color: #ccc;
   position: relative;
@@ -566,7 +566,7 @@ which is now invincible */
   color: #000;
 }
 #header-inner {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/bg-img.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../images/compLogo.jpg") no-repeat center center/cover;
   height: 70vh;
   color: #ccc;
   position: relative;

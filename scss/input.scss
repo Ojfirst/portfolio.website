@@ -338,7 +338,7 @@ border-color: $goldenrod;
 // Header style
 #header {
     &-home {
-        background: linear-gradient(135deg, rgba(0, 10, 36, 0.5), rgba(9, 121, 112, 0.5)), 
+        background: linear-gradient(135deg, rgba(0, 10, 36, 0.5), rgba(0, 121, 112, 0.5)), 
         $bg-image no-repeat center center/cover;
         height: 100vh;
         color: $medium-light-color;
