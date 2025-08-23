@@ -472,16 +472,16 @@ border-color: $goldenrod;
 #home {
     &-a {
         background: $light-color;
-        color: $black;
         transition: all 0.6s ease-in-out;
 
         .content-container {
-            color: $black;
+          color: $medium-color
         }
 
         p {
             text-align: justify;
             padding-bottom: 1rem;
+            color: $dark-color;
         }
 
         .btn-special {

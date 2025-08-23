@@ -607,15 +607,15 @@ which is now invincible */
 
 #home-a {
   background: #f4f4f4;
-  color: #000;
   transition: all 0.6s ease-in-out;
 }
 #home-a .content-container {
-  color: #000;
+  color: #777;
 }
 #home-a p {
   text-align: justify;
   padding-bottom: 1rem;
+  color: #333;
 }
 #home-a .btn-special {
   display: block;
