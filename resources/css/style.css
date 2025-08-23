@@ -1732,6 +1732,7 @@ which is now invincible */
     display: block;
     font-size: 14px;
     min-height: 30px;
+    margin-bottom: 2px;
   }
   #header-home .Hero-msg-container .social-links {
     top: 60%;
