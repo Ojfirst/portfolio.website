@@ -1463,9 +1463,10 @@ which is now invincible */
     margin-top: 7rem;
   }
   #header-home .Hero-msg-container h1 {
-    font-size: 32px;
+    font-size: 30px;
     display: block;
     min-height: 255px;
+    margin-top: 2.5rem;
   }
   #header-home .Hero-msg-container h1 span {
     font-size: 1.1rem;
@@ -1474,6 +1475,7 @@ which is now invincible */
     display: block;
     font-size: 17px;
     min-height: 100px;
+    margin-top: 0.5rem;
   }
   #header-home .Hero-msg-container .btn-container {
     margin-top: 1rem;
