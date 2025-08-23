@@ -1453,7 +1453,7 @@ which is now invincible */
     display: none;
   }
   .scroll-buttons {
-    bottom: 140px;
+    bottom: 20px;
     right: 20px;
   }
   #header-home {
@@ -1465,15 +1465,30 @@ which is now invincible */
   #header-home .Hero-msg-container h1 {
     font-size: 32px;
     display: block;
-    min-height: 195px;
+    min-height: 255px;
   }
   #header-home .Hero-msg-container h1 span {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   #header-home .Hero-msg-container p {
     display: block;
     font-size: 17px;
     min-height: 100px;
+  }
+  #header-home .Hero-msg-container .btn-container {
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  #header-home .Hero-msg-container .btn-container a {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+  #header-home .Hero-msg-container .social-links {
+    top: 50%;
+    left: 10px;
+  }
+  #header-home .Hero-msg-container .social-links a {
+    font-size: 0.6rem;
   }
   #header-home .expertise {
     display: none;

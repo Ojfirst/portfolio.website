@@ -29,7 +29,7 @@
 
     // Scroll-bar 
     .scroll-buttons {
-        bottom: 140px;
+        bottom: 20px;
         right: 20px;
     }
 
@@ -44,10 +44,10 @@
             h1 {
                 font-size: 32px;
                 display: block;
-                min-height: 195px;
+                min-height: 255px;
                 
                 span {
-                    font-size: 1.3rem;
+                    font-size: 1.1rem;
                 }
             }
 
@@ -56,6 +56,25 @@
                 font-size: 17px;
                 min-height: 100px;
             }
+
+            .btn-container {
+                margin-top: 1rem;
+                gap: 1rem;
+
+                a {
+                    padding: 0.5rem 1rem;
+                    font-size: 0.8rem;
+                }
+            }
+
+            .social-links {
+              top: 50%;
+              left: 10px;
+
+            a {
+                font-size: 0.6rem;
+              }
+            } 
         }
         
         .expertise {
