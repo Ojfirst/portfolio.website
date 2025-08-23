@@ -146,7 +146,7 @@
                 font-size: 29px;
                 line-height: 1;
                 margin-top: 1rem;
-                min-height: 70px;
+                min-height: 90px;
 
                 span {
                     font-size: 1.1rem;
@@ -155,11 +155,12 @@
 
             p {
                 font-size: 15px;
-                min-height: 80px;
+                min-height: 50px;
             }
 
-            .btn-main {
-                padding: 0.5rem 1rem;
+            .btn-container {
+                margin-top: 1rem;
+                gap: 1rem;
             }
         }
 

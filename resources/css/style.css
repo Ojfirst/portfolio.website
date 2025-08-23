@@ -1525,17 +1525,18 @@ which is now invincible */
     font-size: 29px;
     line-height: 1;
     margin-top: 1rem;
-    min-height: 70px;
+    min-height: 90px;
   }
   #header-inner .Hero-msg-container h1 span {
     font-size: 1.1rem;
   }
   #header-inner .Hero-msg-container p {
     font-size: 15px;
-    min-height: 80px;
+    min-height: 50px;
   }
-  #header-inner .Hero-msg-container .btn-main {
-    padding: 0.5rem 1rem;
+  #header-inner .Hero-msg-container .btn-container {
+    margin-top: 1rem;
+    gap: 1rem;
   }
   #about .container.about-1 {
     grid-template-columns: 1fr;
