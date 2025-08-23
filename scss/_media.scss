@@ -405,7 +405,8 @@
 
     #nav_bar {
 
-        height: 100px;
+        height: 65px;
+        opacity: 0.65;
         ul {
             display: none;
         }
@@ -424,14 +425,15 @@
             margin-top: 0rem;
 
             h1 {
-                font-size: 27px;
+
+                font-size: 25px;
                 display: block;
                 min-height: 70px;
                 margin-top: 0rem;
                 padding-top: 0rem;
                 
                 span {
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                 }
             }
 
@@ -439,6 +441,16 @@
                 display: block;
                 font-size: 14px;
                 min-height: 30px;
+            }
+
+            .social-links {
+              top: 60%;
+              left: 10px;
+
+            a {
+                font-size: 0.4rem;
+                gap: 0.3rem;
+              } 
             }
         }
         

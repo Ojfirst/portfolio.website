@@ -1703,7 +1703,8 @@ which is now invincible */
     display: block;
   }
   #nav_bar {
-    height: 100px;
+    height: 65px;
+    opacity: 0.65;
   }
   #nav_bar ul {
     display: none;
@@ -1718,19 +1719,27 @@ which is now invincible */
     margin-top: 0rem;
   }
   #header-home .Hero-msg-container h1 {
-    font-size: 27px;
+    font-size: 25px;
     display: block;
     min-height: 70px;
     margin-top: 0rem;
     padding-top: 0rem;
   }
   #header-home .Hero-msg-container h1 span {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   #header-home .Hero-msg-container p {
     display: block;
     font-size: 14px;
     min-height: 30px;
+  }
+  #header-home .Hero-msg-container .social-links {
+    top: 60%;
+    left: 10px;
+  }
+  #header-home .Hero-msg-container .social-links a {
+    font-size: 0.4rem;
+    gap: 0.3rem;
   }
   #header-home .expertise {
     display: none;
