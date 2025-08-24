@@ -671,6 +671,16 @@ which is now invincible */
 #home-b .items:nth-child(5):hover {
   transform: scale(1);
 }
+#home-b .items:nth-child(7),
+#home-b .items:nth-child(9),
+#home-b .items:nth-child(10) {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+}
+#home-b .items:nth-child(12) {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1rem;
+}
 #home-b .items .fa-html5 {
   color: orangered;
 }
@@ -1639,12 +1649,11 @@ which is now invincible */
     display: none;
   }
   #home-b .container {
-    padding-left: 0;
+    padding-left: 4px;
   }
   #home-b .grid-items {
     grid-template-columns: repeat(2, 1fr);
-    margin: 0;
-    min-width: 50%;
+    margin: 6px;
   }
   #home-b .items:nth-child(5) {
     grid-column: 1/span 2;

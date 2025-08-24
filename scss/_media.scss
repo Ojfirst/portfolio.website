@@ -87,13 +87,12 @@
     #home-b {
 
         .container {
-            padding-left: 0;
+            padding-left: 4px
         }
 
         .grid-items {
             grid-template-columns: repeat(2, 1fr);
-            margin:0;
-            min-width: 50%
+            margin: 6px;
         }
 
         .items:nth-child(5) {

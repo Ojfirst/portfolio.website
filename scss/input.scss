@@ -546,6 +546,18 @@ border-color: $goldenrod;
         .items:nth-child(5):hover {
             transform: scale(1);
         }
+        .items:nth-child(7),
+        .items:nth-child(9),
+        .items:nth-child(10) {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 2rem;
+        }
+
+        .items:nth-child(12) {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 1rem;
+        }
+
 
         .items .fa-html5 {
             color: orangered;
