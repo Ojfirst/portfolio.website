@@ -87,11 +87,12 @@
     #home-b {
 
         .container {
-            padding-left: 1rem;
+            padding-left: 0;
         }
 
         .grid-items {
             grid-template-columns: repeat(2, 1fr);
+            margin:0;
         }
 
         .items:nth-child(5) {

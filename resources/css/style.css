@@ -1639,10 +1639,11 @@ which is now invincible */
     display: none;
   }
   #home-b .container {
-    padding-left: 1rem;
+    padding-left: 0;
   }
   #home-b .grid-items {
     grid-template-columns: repeat(2, 1fr);
+    margin: 0;
   }
   #home-b .items:nth-child(5) {
     grid-column: 1/span 2;
