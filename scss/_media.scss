@@ -93,6 +93,7 @@
         .grid-items {
             grid-template-columns: repeat(2, 1fr);
             margin:0;
+            min-width: 50%
         }
 
         .items:nth-child(5) {
@@ -106,7 +107,7 @@
             font-size: 2rem;
         }
         .items p {
-            font-size: 0.5rem;
+            font-size: 0.7rem;
         }
     }
 

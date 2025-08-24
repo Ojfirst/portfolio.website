@@ -1644,6 +1644,7 @@ which is now invincible */
   #home-b .grid-items {
     grid-template-columns: repeat(2, 1fr);
     margin: 0;
+    min-width: 50%;
   }
   #home-b .items:nth-child(5) {
     grid-column: 1/span 2;
@@ -1655,7 +1656,7 @@ which is now invincible */
     font-size: 2rem;
   }
   #home-b .items p {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   #home-c .flex-items {
     flex-wrap: wrap;
