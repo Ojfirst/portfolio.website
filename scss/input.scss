@@ -1262,7 +1262,7 @@ border-color: $goldenrod;
         }
         
         .control-btn {
-            background: linear-gradient(90deg, #ff8c00, #ff2d55);;
+            background: linear-gradient(90deg, #ff8c00, #ff2d55);
             color: #333;
             border: none;
             padding: 0.8rem 1.5rem;
@@ -1556,8 +1556,8 @@ border-color: $goldenrod;
             }
     
             .service-timeline li {
-                background: $dark-color;
-                color: $medium-light-color;
+                background: linear-gradient(90deg, #ff8c00, #ff2d55);
+                color: #333;
                 padding: 10px;
                 margin: 5px 0;
                 border-radius: 5px;
@@ -1580,17 +1580,17 @@ border-color: $goldenrod;
             
             .service-card {
                 padding: 20px;
-                background: $dark-color;
+                background: linear-gradient(90deg, #ff8c00, #ff2d55);
                 border-radius: 8px;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
                 transition: 0.3s;
 
                 h3 {
                     text-transform: capitalize;
-                    color: $light-color;
+                    color: $medium-color-2;
                 }
 
-                p {color: $medium-light-color}
+                p {color: $dark-color }
             }
         }
     }

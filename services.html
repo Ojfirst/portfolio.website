@@ -2,194 +2,191 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="resources/css/style.css">
-    <script src="resources/js/main.js" defer></script>
-    <script src="resources/js/formvalidation.js" defer></script>
-    <script src="resources/js/typewriter.js" defer></script>
-    <script src="resources/js/animation.js" defer></script>
-    <script src="resources/js/faq.js" defer></script>
-    <title>SERVICES | OJFirst Web Apps | Full-Stack Web Developer, Softwear Engineer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <script src="resources/js/main.js" defer></script>
+  <script src="resources/js/formvalidation.js" defer></script>
+  <script src="resources/js/typewriter.js" defer></script>
+  <script src="resources/js/animation.js" defer></script>
+  <script src="resources/js/faq.js" defer></script>
+  <title>SERVICES | OJFirst Web Apps | Full-Stack Web Developer, Softwear Engineer</title>
 </head>
 
 <body>
-    <!-- Progress bar -->
-    <div class="scroll-progress-container">
-        <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+  <!-- Progress bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- hamburger menu -->
+  <div class="menu-wrap">
+    <!-- The check box is just for functionality -->
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+      <!-- Inner Div, used to create line 'Hamburger lines inside' -->
+      <div></div>
     </div>
-
-    <!-- hamburger menu -->
-    <div class="menu-wrap">
-        <!-- The check box is just for functionality -->
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-            <!-- Inner Div, used to create line 'Hamburger lines inside' -->
-            <div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
         </div>
-        <div class="menu">
-            <div>
-                <div>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="project.html">Projects</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="index.html#home-e">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Header -->
-    <header id="header-inner">
-        <div class="container">
+  <!-- Header -->
+  <header id="header-inner">
+    <div class="container">
 
-            <nav id="nav_bar">
-                <img src="resources/images/nav_logo.jpg" alt="logo" id="logo">
+      <nav id="nav_bar">
+        <img src="resources/images/nav_logo.jpg" alt="logo" id="logo">
 
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="project.html">PROJECT</a></li>
-                    <li><a href="services.html" class="current">SERVICES</a></li>
-                    <li><a href="index.html#home-e">CONTACT</a></li>
-                </ul>
-                <button id="theme-toggle">🌙 Dark Mode</button>
-            </nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="services.html" class="current">SERVICES</a></li>
 
-            <div class="Hero-msg-container">
-                <h1>Services:
-                    <span class="txt-type" data-wait="3000"
-                        data-words='["Elevate Your Business with Cutting-Edge Web Solutions"]'></span>
-                </h1>
-                <p class="lead">
-                    <span id="typing-text"></span>
-                    <span class="cursor">|</span>
-                </p>
-                <a href="index.html#home-e" id="hero-btn" class="btn-main">Contact Me</a>
-            </div>
-        </div>
-    </header>
+        </ul>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+      </nav>
 
-    <main>
-        <!-- Services Intro -->
-        <section id="service-intro" class="sec-margin">
-            <div class="container service">
-                <div class="service-text">
-                    <h2 class="section-title text-center lead box top">Your Vision, My Code – A Portfolio That Works for
-                        You</h2>
-                    <p class="box bottom">Welcome to a new era of digital presence. I don’t just build websites—I craft
-                        powerful, high-performance platforms that elevate brands and drive business success. Whether you
-                        need a sleek, conversion-focused website or a robust, interactive application, my expertise in
-                        Laravel, React, and modern web technologies ensures that your online presence stands out in the
-                        digital landscape.</p>
-                </div>
-                <div class="service-timeline text-center box right">
-                    <ul>
-                        <li>🚗 25+ years in the automobile industry</li>
-                        <li>💻 Expert in Laravel, React, JavaScript</li>
-                        <li>🌍 Founder of Ojfirst Autos</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Services offered -->
-        <section id="service-offered" class="text-center sec-margin py-2">
-            <div class="container">
-                <h2 class="section-title lead box top">What I Offer</h2>
-                <div class="grid-content">
-                    <div class="service-card box left">
-                        <h3>Custom-Built Websites</h3>
-                        <p>Visually stunning, high-performance pages designed to impress.</p>
-                    </div>
-                    <div class="service-card box right">
-                        <h3>Interactive Portfolios</h3>
-                        <p>Dynamic showcases with 3D spinning galleries and engaging effects.</p>
-                    </div>
-                    <div class="service-card box left">
-                        <h3>Business-Driven Development</h3>
-                        <p>Web solutions tailored to real-world business growth and automation.</p>
-                    </div>
-                    <div class="service-card box right">
-                        <h3>Web Applications</h3>
-                        <p>Scalable, data-driven applications to streamline business operations.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--  Why Choose Me -->
-        <section id="why-choose" class=" text-center sec-margin py-2">
-            <div class="container">
-                <h2 class="section-title lead box top">Why Work with Me?</h2>
-                <ul class="box bottom">
-                    <li>🚀 Tech & Business Expertise – Real-world solutions that work.</li>
-                    <li>🎨 Bespoke, Future-Proof Designs – No templates, only unique websites.</li>
-                    <li>⚡ Performance & Security First – Fast, optimized, and secure.</li>
-                    <li>📈 Growth-Driven Approach – Websites that convert and scale.</li>
-                </ul>
-            </div>
-        </section>
-
-
-        <!-- Call to Action -->
-        <section id="cta" class="text-center sec-margin py-2">
-            <div class="container">
-                <div class="cta">
-                    <h2 class="section-title lead box top">Let's Build Something Extraordinary</h2>
-                    <p>Your website should be a tool that drives success. Let’s make it happen!</p>
-                    <a href="index.html#home-e" class="btn-special my-2">Get in Touch</a>
-                </div>
-            </div>
-        </section>
-
-
-    </main>
-
-    <footer id="foot-main">
-        <div class="content-container my-1">
-            <P>&COPY; 2025 All Right Reserved</P>
-            <p>This website is a copyright of and maintained by</p>
-            <p>Omojide Oluwafemi</p>
-            <div class="flex-items socials py-1">
-                <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
-                <a href=""><i class="fa-brands fa-x-twitter fa-2x"></i></a>
-                <a href=""><i class="fa-brands fa-discord fa-2x"></i></a>
-                <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/simonaina" target="_blank"><i
-                        class="fa-brands fa-linkedin fa-2x"></i></a>
-                <a href="https://wa.me/2348063096363" target="_blank"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Top and Bottom Navigation -->
-    <div class="scroll-buttons">
-        <button id="scroll-down" class="scroll-btn btn-main">
-            <i class="fas fa-arrow-down"></i>
-            Down
-        </button>
-        <button id="back-to-top" class="scroll-btn btn-special">
-            <i class="fas fa-arrow-up"></i>
-            Top
-        </button>
+      <div class="Hero-msg-container">
+        <h1>Services:
+          <span class="txt-type" data-wait="3000"
+            data-words='["Elevate Your Business with Cutting-Edge Web Solutions"]'></span>
+        </h1>
+        <p class="lead">
+          <span id="typing-text"></span>
+          <span class="cursor">|</span>
+        </p>
+        <a href="index.html#home-e" id="hero-btn" class="btn-main">Contact Me</a>
+      </div>
     </div>
+  </header>
+
+  <main>
+    <!-- Services Intro -->
+    <section id="service-intro" class="sec-margin">
+      <div class="container service">
+        <div class="service-text">
+          <h2 class="section-title text-center lead box top">Transform Your Online Presence</h2>
+          <p class="box bottom">Welcome to a new era of digital presence. I don’t just build websites—I craft
+            powerful, high-performance platforms that elevate brands and drive business success. Whether you
+            need a sleek, conversion-focused website or a robust, interactive application, my expertise in React,
+            Nest.js, Express.js Node.js, Nest.js, and modern web technologies ensures your project is built to last and
+            designed to impress
+          </p>
+
+        </div>
+        <div class="service-timeline text-center box right">
+          <ul>
+            <li>🚗 25+ years in the automobile industry</li>
+            <li>💻 Expert in Laravel, React, JavaScript</li>
+            <li>🌍 Founder of Ojfirst Autos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Services offered -->
+    <section id="service-offered" class="text-center sec-margin py-2">
+      <div class="container">
+        <h2 class="section-title lead box top">What I Offer</h2>
+        <div class="grid-content">
+          <div class="service-card box left">
+            <h3>Custom-Built Websites</h3>
+            <p>Visually stunning, high-performance pages designed to impress.</p>
+          </div>
+          <div class="service-card box right">
+            <h3>Interactive Portfolios</h3>
+            <p>Dynamic showcases with 3D spinning galleries and engaging effects.</p>
+          </div>
+          <div class="service-card box left">
+            <h3>Business-Driven Development</h3>
+            <p>Web solutions tailored to real-world business growth and automation.</p>
+          </div>
+          <div class="service-card box right">
+            <h3>Web Applications</h3>
+            <p>Scalable, data-driven applications to streamline business operations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Why Choose Me -->
+    <section id="why-choose" class=" text-center sec-margin py-2">
+      <div class="container">
+        <h2 class="section-title lead box top">Why Work with Me?</h2>
+        <ul class="box bottom">
+          <li>🚀 Tech & Business Expertise – Real-world solutions that work.</li>
+          <li>🎨 Bespoke, Future-Proof Designs – No templates, only unique websites.</li>
+          <li>⚡ Performance & Security First – Fast, optimized, and secure.</li>
+          <li>📈 Growth-Driven Approach – Websites that convert and scale.</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- Call to Action -->
+    <section id="cta" class="text-center sec-margin py-2">
+      <div class="container">
+        <div class="cta">
+          <h2 class="section-title lead box top">Let's Build Something Extraordinary</h2>
+          <p>Your website should be a tool that drives success. Let’s make it happen!</p>
+          <a href="index.html#home-e" class="btn-special my-2">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer id="foot-main">
+    <div class="content-container my-1">
+      <P>&COPY; 2025 All Right Reserved</P>
+      <p>This website is a copyright of and maintained by</p>
+      <p>Ojfirst Web Apps</p>
+      <div class="flex-items socials py-1">
+        <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        <a href=""><i class="fa-brands fa-discord fa-2x"></i></a>
+        <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/simonaina" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <a href="https://wa.me/2348063096363" target="_blank"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Top and Bottom Navigation -->
+  <div class="scroll-buttons">
+    <button id="scroll-down" class="scroll-btn btn-main">
+      <i class="fas fa-arrow-down"></i>
+      Down
+    </button>
+    <button id="back-to-top" class="scroll-btn btn-special">
+      <i class="fas fa-arrow-up"></i>
+      Top
+    </button>
+  </div>
 
 </body>
 
