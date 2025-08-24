@@ -1148,23 +1148,149 @@ which is now invincible */
   Padding: 0;
 }
 #about .container.about-1 .about-timeline li {
-  Background: #333;
-  color: #ccc;
-  Padding: 10px;
-  Margin: 5px 0;
-  Border-radius: 5px;
+  background: linear-gradient(90deg, #ff8c00, #ff2d55);
+  color: #333;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
 }
 #about .about-2 {
   padding: 0 5rem;
   padding-bottom: 3rem;
   text-align: justify;
 }
-#about .about-2 ul {
+#about .about-2 .subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#about .about-2 .process-container {
+  padding: 2.5rem;
+}
+#about .about-2 .process-timeline {
   display: flex;
-  text-align: left;
+  flex-direction: column;
+  position: relative;
+  margin: 2rem 0;
+}
+#about .about-2 .process-timeline::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #ff2d55;
+  left: 30px;
+  top: 0;
+  border-radius: 10px;
+}
+#about .about-2 .process-step {
+  display: flex;
+  margin-bottom: 3rem;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.6s ease;
+}
+#about .about-2 .process-step.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+#about .about-2 .step-icon {
+  background: #ff2d55;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  flex-shrink: 0;
+  z-index: 2;
+  color: #333;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+}
+#about .about-2 .step-content {
+  background: linear-gradient(90deg, #ff8c00, #ff2d55);
+  padding: 1.8rem;
+  border-radius: 15px;
+  flex: 1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #ff8c00;
+  transition: all 0.3s ease;
+}
+#about .about-2 .step-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+#about .about-2 .step-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #1d1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#about .about-2 .step-number {
+  font-weight: 700;
+  color: #1d1a1a;
+  margin-right: 0.5rem;
+}
+#about .about-2 .step-description {
+  line-height: 1.6;
+  color: #333;
+}
+#about .about-2 .tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+#about .about-2 .badge {
+  background: linear-gradient(90deg, #ff8c00, #ff2d55);
+  color: #333;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+#about .about-2 .controls {
+  display: flex;
+  justify-content: center;
   gap: 1rem;
-  margin-top: 1.5rem;
-  list-style: none;
+  margin-top: 2rem;
+}
+#about .about-2 .control-btn {
+  background: linear-gradient(90deg, #ff8c00, #ff2d55);
+  color: #333;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#about .about-2 .control-btn:hover {
+  background: #ff2d55;
+  transform: translateY(-2px);
+}
+#about .about-2 .progress-bar {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  margin: 2rem 0;
+  overflow: hidden;
+}
+#about .about-2 .progress-fill {
+  height: 100%;
+  background: linear-gradient(to right, #ff2d55, #10b981);
+  border-radius: 10px;
+  width: 0%;
+  transition: width 0.5s ease;
 }
 
 #skills {
@@ -1183,11 +1309,16 @@ which is now invincible */
   text-transform: capitalize;
 }
 #skills .skill-card {
-  background: #333;
-  color: #ccc;
+  background: linear-gradient(90deg, #ff8c00, #ff2d55);
+  color: #333;
   font-weight: bold;
   padding: 20px;
   border-radius: 8px;
+  min-height: 120px;
+}
+#skills .skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 #faq {
@@ -1572,6 +1703,30 @@ which is now invincible */
     text-align: justify;
     padding-bottom: 1rem;
   }
+  #about .about-2 .process-timeline::before {
+    left: 20px;
+  }
+  #about .about-2 .step-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    margin-right: 1.5rem;
+  }
+  #about .about-2 .step-content {
+    padding: 1.2rem;
+  }
+  #about .about-2 h1 {
+    font-size: 2rem;
+  }
+  #skills .skills-grid {
+    display: grid;
+    grid-template-columns: 3fr;
+  }
+  #skills .skill-card {
+    padding: 15px;
+    border-radius: 8px;
+    min-height: 50px;
+  }
   #cta {
     padding-bottom: 0.5rem;
   }
@@ -1582,7 +1737,7 @@ which is now invincible */
   }
   .grid-content {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 800px) {

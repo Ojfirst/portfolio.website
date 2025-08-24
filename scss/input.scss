@@ -1131,11 +1131,11 @@ border-color: $goldenrod;
         }
     
         .about-timeline li {
-            Background: $dark-color;
-            color: $medium-light-color;
-            Padding: 10px;
-            Margin: 5px 0;
-            Border-radius: 5px;
+            background: linear-gradient(90deg, #ff8c00, #ff2d55);
+            color: #333;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
         }
     }    
 
@@ -1144,12 +1144,156 @@ border-color: $goldenrod;
         padding-bottom: 3rem;
         text-align: justify;
 
-        ul {
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .process-container {
+            padding: 2.5rem;
+        }
+        
+        .process-timeline {
             display: flex;
-            text-align: left;
+            flex-direction: column;
+            position: relative;
+            margin: 2rem 0;
+        }
+        
+        .process-timeline::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 4px;
+            background: #ff2d55;
+            left: 30px;
+            top: 0;
+            border-radius: 10px;
+        }
+        
+        .process-step {
+            display: flex;
+            margin-bottom: 3rem;
+            position: relative;
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: all 0.6s ease;
+        }
+        
+        .process-step.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .step-icon {
+            background: #ff2d55;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 2rem;
+            flex-shrink: 0;
+            z-index: 2;
+            color: #333;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+        }
+        
+        .step-content {
+            background: linear-gradient(90deg, #ff8c00, #ff2d55);
+            padding: 1.8rem;
+            border-radius: 15px;
+            flex: 1;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #ff8c00;
+            transition: all 0.3s ease;
+        }
+        
+        .step-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .step-title {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: #1d1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .step-number {
+            font-weight: 700;
+            color: #1d1a1a;
+            margin-right: 0.5rem;
+        }
+        
+        .step-description {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .tech-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .badge {
+            background: linear-gradient(90deg, #ff8c00, #ff2d55);
+            color: #333;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
             gap: 1rem;
-            margin-top: 1.5rem;
-            list-style: none;
+            margin-top: 2rem;
+        }
+        
+        .control-btn {
+            background: linear-gradient(90deg, #ff8c00, #ff2d55);;
+            color: #333;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .control-btn:hover {
+            background: #ff2d55;
+            transform: translateY(-2px);
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: #e5e7eb;
+            border-radius: 10px;
+            margin: 2rem 0;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(to right, #ff2d55, #10b981);
+            border-radius: 10px;
+            width: 0%;
+            transition: width 0.5s ease;
         }
     }
 }
@@ -1172,11 +1316,16 @@ border-color: $goldenrod;
     }
     
     .skill-card {
-        background: $dark-color;
-        color: $medium-light-color;
+        background: linear-gradient(90deg, #ff8c00, #ff2d55);
+        color: #333;
         font-weight: bold;
         padding: 20px;
         border-radius: 8px;
+        min-height: 120px;
+    }
+    .skill-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     }
 }
 
