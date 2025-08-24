@@ -524,6 +524,7 @@ border-color: $goldenrod;
             border: 1px solid $gold-deep;
             border-radius: 0.3rem;
             background: $dark-color;
+            color: $medium-light-color;
             padding: 0.5rem 0.5rem;
             cursor: pointer;
         }
@@ -531,7 +532,7 @@ border-color: $goldenrod;
         .items:nth-child(5) {
             display: flex;
             flex-direction: column;
-            grid-column: 5 / span 2;
+            grid-column: 5 / span 1;
             grid-row: 1 / span 2;
             margin-left: 1rem;
             overflow: hidden;
@@ -566,16 +567,16 @@ border-color: $goldenrod;
             color: #00ffff;
         }
         
-        .items .fa-php {
-            color: #2e012e;
+        .items .fa-node {
+            color: rgb(2, 247, 2);
         }
         
-        .items .fa-laravel {
-            color: #2e012e;
+        .items .fa-database {
+            color: $medium-light-color;
         }
 
         .items h1 {
-            font-size: 4rem;
+            font-size: 2rem;
             font-weight: bolder;
             padding-bottom: 0;
             color: $goldenrod;

@@ -652,13 +652,14 @@ which is now invincible */
   border: 1px solid rgb(73, 52, 0);
   border-radius: 0.3rem;
   background: #333;
+  color: #ccc;
   padding: 0.5rem 0.5rem;
   cursor: pointer;
 }
 #home-b .items:nth-child(5) {
   display: flex;
   flex-direction: column;
-  grid-column: 5/span 2;
+  grid-column: 5/span 1;
   grid-row: 1/span 2;
   margin-left: 1rem;
   overflow: hidden;
@@ -685,14 +686,14 @@ which is now invincible */
 #home-b .items .fa-react {
   color: #00ffff;
 }
-#home-b .items .fa-php {
-  color: #2e012e;
+#home-b .items .fa-node {
+  color: rgb(2, 247, 2);
 }
-#home-b .items .fa-laravel {
-  color: #2e012e;
+#home-b .items .fa-database {
+  color: #ccc;
 }
 #home-b .items h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: bolder;
   padding-bottom: 0;
   color: goldenrod;
