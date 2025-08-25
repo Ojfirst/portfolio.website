@@ -1743,8 +1743,8 @@ which is now invincible */
   #about .about-2 .step-title {
     font-size: 1.1rem;
     text-align: justify;
-    word-spacing: 0.1rem;
-    letter-spacing: -0.02rem;
+    word-spacing: 0rem;
+    letter-spacing: -0.01rem;
   }
   #about .about-2 .step-number {
     font-weight: 700;
