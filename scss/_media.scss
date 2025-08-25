@@ -205,13 +205,31 @@
         }
 
         .about-2 {
-            padding: 0 1rem;
+            padding: 0 0.1rem;
             text-align: justify;
             padding-bottom: 1rem;
+
+            process-timeline {
+              padding: 0.1rem;
+            }
 
             .process-timeline::before {
                 left: 20px;
             }
+
+            .step-title {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: #1d1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .step-number {
+            font-weight: 700;
+            margin-right: 0.1rem;
+        }
             
             .step-icon {
                 width: 40px;

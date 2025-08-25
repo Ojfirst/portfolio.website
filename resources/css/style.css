@@ -1723,12 +1723,27 @@ which is now invincible */
     gap: 1rem;
   }
   #about .about-2 {
-    padding: 0 1rem;
+    padding: 0 0.1rem;
     text-align: justify;
     padding-bottom: 1rem;
   }
+  #about .about-2 process-timeline {
+    padding: 0.1rem;
+  }
   #about .about-2 .process-timeline::before {
     left: 20px;
+  }
+  #about .about-2 .step-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #1d1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .about-2 .step-number {
+    font-weight: 700;
+    margin-right: 0.1rem;
   }
   #about .about-2 .step-icon {
     width: 40px;
