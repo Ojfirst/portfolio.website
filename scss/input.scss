@@ -1249,6 +1249,8 @@ border-color: $goldenrod;
         .step-description {
             line-height: 1.6;
             color: #333;
+            text-align: left;
+            hyphens: auto;
         }
         
         .tech-badges {

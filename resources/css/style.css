@@ -1255,6 +1255,8 @@ which is now invincible */
 #about .about-2 .step-description {
   line-height: 1.6;
   color: #333;
+  text-align: left;
+  hyphens: auto;
 }
 #about .about-2 .tech-badges {
   display: flex;
@@ -1723,9 +1725,12 @@ which is now invincible */
     gap: 1rem;
   }
   #about .about-2 {
-    padding: 0 0.1rem;
+    padding: 0 0.8rem;
     text-align: justify;
     padding-bottom: 1rem;
+  }
+  #about .about-2 .process-container {
+    padding: 0;
   }
   #about .about-2 process-timeline {
     padding: 0.1rem;
@@ -1734,16 +1739,14 @@ which is now invincible */
     left: 20px;
   }
   #about .about-2 .step-title {
-    font-size: 1.4rem;
-    margin-bottom: 0.8rem;
-    color: #1d1a1a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 1.1rem;
   }
   #about .about-2 .step-number {
     font-weight: 700;
     margin-right: 0.1rem;
+  }
+  #about .about-2 .step-description {
+    text-align: start;
   }
   #about .about-2 .step-icon {
     width: 40px;
