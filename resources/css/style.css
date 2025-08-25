@@ -1672,9 +1672,17 @@ which is now invincible */
     gap: 1rem;
     background-color: #333;
   }
+  #mobile-gallery .content-container {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow: auto;
+  }
   #mobile-gallery .project {
-    min-width: 110px;
-    min-height: 110px;
+    min-width: 80%;
+    min-height: 100%;
   }
   #home-e .contact-info {
     padding: 0.5rem 0;
