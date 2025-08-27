@@ -1117,7 +1117,14 @@ which is now invincible */
   font-weight: bolder;
 }
 #foot-main .socials > a {
+  color: #fff;
+  font-size: 1rem;
+  color: #ccc;
+  transition: color 0.3s ease;
   padding: 0 0.5rem;
+}
+#foot-main .socials > a:hover {
+  color: goldenrod;
 }
 
 .scroll-buttons {
@@ -1481,6 +1488,11 @@ which is now invincible */
 .dark-mode #service-intro .container.service {
   background: #272727;
   border-bottom: n none;
+}
+
+.dark-mode #home-a .content-container,
+.dark-mode #home-a p {
+  color: #ccc;
 }
 
 .dark-mode #home .testimonials-section,

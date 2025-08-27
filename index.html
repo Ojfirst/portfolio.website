@@ -33,6 +33,15 @@
   <script src="resources/js/clientsreview.js" defer></script>
   <script src="resources/js/formvalidation.js" defer></script>
   <script src="resources/js/mobil_gallery.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "yLsI2GPoBf-IhJ67u",
+      });
+    })();
+  </script>
   <title>OJFirst Web Apps - Developer for startups & SMBs | React & Next.js Expert</title>
 
 </head>
@@ -310,7 +319,7 @@
             </div>
             <div>
               <i class="fa-solid fa-phone fa-2x"></i>
-              <p>+234 704-034-3974</p>
+              <p>+234 806-309-6363</p>
             </div>
           </div>
 
@@ -322,21 +331,21 @@
                 <div><small id="nameErr"></small></div>
               </div>
               <div>
-                <input type="tel" name="phone" id="phone" placeholder="Phone">
-                <div><small id="phoneErr"></small></div>
+                <input type="email" name="email" id="email" placeholder="mymail@email.com">
+                <div><small id="emailErr"></small></div>
               </div>
             </div>
 
             <div>
-              <input type="email" name="email" id="email" placeholder="mymail@email.com">
-              <div><small id="emailErr"></small></div>
+              <input type="text" name="subject" id="subject" placeholder="Subject">
+              <div><small id="subjectErr"></small></div>
             </div>
             <div>
               <textarea name="message" id="message" cols="30" rows="5" placeholder="Write a message"></textarea>
               <div><small id="msgErr"></small></div>
             </div>
 
-            <input type="submit" class="btn-special" value=" Submit">
+            <input type="button" class="btn-special" value=" Submit" onclick="sendEmail();">
             <div><small id="submit-true"></small></div>
           </form>
         </div>
@@ -349,7 +358,7 @@
     <div class="content-container my-1">
       <P>&COPY; 2025 All Right Reserved</P>
       <p>This website is a copyright of and maintained by</p>
-      <p>Ojfirst Web Apps</p>
+      <p><span class="special-col">Ojfirst</span> Web Apps</p>
       <div class="flex-items socials py-1">
         <a href="https://tr.ee/gjcCPf" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>
         <a href="https://tr.ee/XxbfR0" target="_blank"><i class="fa-brands fa-x-twitter fa-2x"></i></a>

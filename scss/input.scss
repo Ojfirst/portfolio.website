@@ -1082,7 +1082,15 @@ border-color: $goldenrod;
     }
 
     .socials > a {
-        padding: 0 0.5rem;
+      color: $white;
+      font-size: 1rem;
+      color: $medium-light-color;
+      transition: color 0.3s ease;
+      padding: 0 0.5rem;
+
+        &:hover {
+          color: $goldenrod;
+        }
     }
 }
 
@@ -1519,6 +1527,11 @@ border-color: $goldenrod;
 {
     background: $main-color;
     border-bottom:n none;
+}
+
+.dark-mode #home-a .content-container,
+.dark-mode #home-a p {
+  color: $medium-light-color; 
 }
 
 .dark-mode #home .testimonials-section,
