@@ -1057,6 +1057,15 @@ which is now invincible */
   justify-content: center;
   gap: 1rem;
 }
+#home-e .contact-info div a, #home-e .contact-info div i {
+  background: linear-gradient(to right, #ff8c00, #ff2d55);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#home-e .contact-info div:hover {
+  color: goldenrod;
+}
 #home-e input,
 #home-e textarea {
   font-size: 1rem;
@@ -1493,6 +1502,14 @@ which is now invincible */
 .dark-mode #home-a .content-container,
 .dark-mode #home-a p {
   color: #ccc;
+}
+
+.dark-mode #home-e .contact-info div a:hover,
+.dark-mode #home-e .contact-info div i:hover {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: initial !important;
+  color: goldenrod !important;
 }
 
 .dark-mode #home .testimonials-section,

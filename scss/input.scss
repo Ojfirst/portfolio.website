@@ -1003,6 +1003,18 @@ border-color: $goldenrod;
                 align-items: center;
                 justify-content: center;
                 gap: 1rem;
+
+
+                a,i {
+                  background: linear-gradient(to right, #ff8c00, #ff2d55);
+                  background-clip: inherit;
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                }
+
+                &:hover {
+                  color: goldenrod;
+                }
             }
         } 
         
@@ -1532,6 +1544,14 @@ border-color: $goldenrod;
 .dark-mode #home-a .content-container,
 .dark-mode #home-a p {
   color: $medium-light-color; 
+}
+
+.dark-mode #home-e .contact-info div a:hover,
+.dark-mode #home-e .contact-info div i:hover {
+    background: none !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: initial !important;
+  color: $goldenrod !important;
 }
 
 .dark-mode #home .testimonials-section,
